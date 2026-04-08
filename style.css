@@ -269,6 +269,114 @@ select option {
     color: var(--text);
 }
 
+/* ===== Geocode Autocomplete ===== */
+.geocode-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.geocode-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    background: var(--card-solid);
+    border: 1px solid var(--border-light);
+    border-top: none;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    max-height: 220px;
+    overflow-y: auto;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+}
+
+.geocode-dropdown.active {
+    display: block;
+}
+
+.geocode-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: background 0.15s var(--ease);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.geocode-item:last-child {
+    border-bottom: none;
+}
+
+.geocode-item:hover,
+.geocode-item.active {
+    background: var(--card-hover);
+}
+
+.geocode-item-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--primary);
+}
+
+.geocode-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.geocode-item-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.geocode-item-address {
+    font-size: 0.68rem;
+    color: var(--text-3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.geocode-loading {
+    padding: 14px 12px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-3);
+}
+
+.geocode-loading::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--border-light);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: geocode-spin 0.6s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+@keyframes geocode-spin {
+    to { transform: rotate(360deg); }
+}
+
+.geocode-no-results {
+    padding: 14px 12px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-3);
+}
+
 /* ===== Buttons ===== */
 .btn-row {
     display: flex;

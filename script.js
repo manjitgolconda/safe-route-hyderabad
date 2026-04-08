@@ -252,8 +252,194 @@ function renderUserReports() {
 }
 
 // ============================================================
-// 5. LOCATION SELECTION
+// 5. LOCATION SELECTION + GEOCODING
 // ============================================================
+
+/**
+ * Geocoding via Nominatim (OpenStreetMap) — free, no API key required.
+ * Forward: place name → coordinates
+ * Reverse: coordinates → place name
+ */
+const NOMINATIM_BASE = 'https://nominatim.openstreetmap.org';
+
+/** Debounce helper */
+function debounce(fn, ms) {
+    let timer;
+    return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn(...args), ms);
+    };
+}
+
+/** Forward geocode — search for places by name */
+async function geocodeSearch(query) {
+    if (!query || query.trim().length < 2) return [];
+
+    const params = new URLSearchParams({
+        q: query,
+        format: 'json',
+        addressdetails: '1',
+        limit: '6',
+        viewbox: '78.2,17.6,78.8,17.2', // Hyderabad bounding box
+        bounded: '0', // Prefer but don't restrict to viewbox
+    });
+
+    const res = await fetch(`${NOMINATIM_BASE}/search?${params}`, {
+        headers: { 'Accept-Language': 'en' },
+    });
+
+    if (!res.ok) return [];
+    return res.json();
+}
+
+/** Reverse geocode — coordinates to place name */
+async function reverseGeocode(lat, lng) {
+    const params = new URLSearchParams({
+        lat: lat.toString(),
+        lon: lng.toString(),
+        format: 'json',
+        addressdetails: '1',
+        zoom: '18',
+    });
+
+    try {
+        const res = await fetch(`${NOMINATIM_BASE}/reverse?${params}`, {
+            headers: { 'Accept-Language': 'en' },
+        });
+        if (!res.ok) return null;
+        return res.json();
+    } catch {
+        return null;
+    }
+}
+
+/** Get a short, readable name from a Nominatim result */
+function getShortName(result) {
+    const addr = result.address || {};
+    const name = result.name || addr.road || addr.neighbourhood || addr.suburb || '';
+    const area = addr.suburb || addr.neighbourhood || addr.city_district || '';
+    const city = addr.city || addr.town || addr.state_district || '';
+
+    if (name && area && name !== area) return `${name}, ${area}`;
+    if (name && city) return `${name}, ${city}`;
+    if (name) return name;
+    return result.display_name ? result.display_name.split(',').slice(0, 2).join(',') : '';
+}
+
+/** Show dropdown with results */
+function showDropdown(dropdownId, results, onSelect) {
+    const dropdown = document.getElementById(dropdownId);
+    if (!dropdown) return;
+
+    if (results.length === 0) {
+        dropdown.innerHTML = '<div class="geocode-no-results">No results found</div>';
+        dropdown.classList.add('active');
+        return;
+    }
+
+    dropdown.innerHTML = results.map((r, i) => {
+        const name = r.name || r.display_name.split(',')[0];
+        const address = r.display_name.split(',').slice(1, 3).join(',').trim();
+        return `
+            <div class="geocode-item" data-index="${i}">
+                <svg class="geocode-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+                <div class="geocode-item-text">
+                    <span class="geocode-item-name">${name}</span>
+                    <span class="geocode-item-address">${address}</span>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    dropdown.classList.add('active');
+
+    // Click handlers
+    dropdown.querySelectorAll('.geocode-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const idx = parseInt(item.dataset.index);
+            onSelect(results[idx]);
+            dropdown.classList.remove('active');
+        });
+    });
+}
+
+function showDropdownLoading(dropdownId) {
+    const dropdown = document.getElementById(dropdownId);
+    if (!dropdown) return;
+    dropdown.innerHTML = '<div class="geocode-loading">Searching…</div>';
+    dropdown.classList.add('active');
+}
+
+function hideDropdown(dropdownId) {
+    const dropdown = document.getElementById(dropdownId);
+    if (dropdown) dropdown.classList.remove('active');
+}
+
+/** Initialize geocoding for an input field */
+function initGeocodeInput(inputId, dropdownId, onPlaceSelected) {
+    const input = document.getElementById(inputId);
+    if (!input) return;
+
+    const handleSearch = debounce(async (query) => {
+        if (query.length < 2) {
+            hideDropdown(dropdownId);
+            return;
+        }
+
+        showDropdownLoading(dropdownId);
+        const results = await geocodeSearch(query);
+        showDropdown(dropdownId, results, (result) => {
+            const lat = parseFloat(result.lat);
+            const lng = parseFloat(result.lon);
+            input.value = getShortName(result);
+            onPlaceSelected(L.latLng(lat, lng), getShortName(result));
+        });
+    }, 400);
+
+    input.addEventListener('input', (e) => {
+        handleSearch(e.target.value);
+    });
+
+    // Close dropdown on blur (with delay for click)
+    input.addEventListener('blur', () => {
+        setTimeout(() => hideDropdown(dropdownId), 200);
+    });
+
+    // Keyboard navigation
+    input.addEventListener('keydown', (e) => {
+        const dropdown = document.getElementById(dropdownId);
+        if (!dropdown || !dropdown.classList.contains('active')) return;
+
+        const items = dropdown.querySelectorAll('.geocode-item');
+        if (items.length === 0) return;
+
+        let activeIdx = -1;
+        items.forEach((item, i) => {
+            if (item.classList.contains('active')) activeIdx = i;
+        });
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            items.forEach(i => i.classList.remove('active'));
+            activeIdx = (activeIdx + 1) % items.length;
+            items[activeIdx].classList.add('active');
+            items[activeIdx].scrollIntoView({ block: 'nearest' });
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            items.forEach(i => i.classList.remove('active'));
+            activeIdx = activeIdx <= 0 ? items.length - 1 : activeIdx - 1;
+            items[activeIdx].classList.add('active');
+            items[activeIdx].scrollIntoView({ block: 'nearest' });
+        } else if (e.key === 'Enter' && activeIdx >= 0) {
+            e.preventDefault();
+            items[activeIdx].click();
+        } else if (e.key === 'Escape') {
+            hideDropdown(dropdownId);
+        }
+    });
+}
 
 /** Create clean SVG-based location markers */
 function createLocationMarker(latlng, type) {
@@ -297,26 +483,51 @@ map.on('click', function (e) {
 
     if (state.selectingStart) {
         setStart(e.latlng);
+        // Reverse geocode to show place name
+        reverseGeocode(e.latlng.lat, e.latlng.lng).then(result => {
+            if (result && result.display_name) {
+                document.getElementById('start-input').value = getShortName(result);
+            }
+        });
     } else {
         setEnd(e.latlng);
+        reverseGeocode(e.latlng.lat, e.latlng.lng).then(result => {
+            if (result && result.display_name) {
+                document.getElementById('end-input').value = getShortName(result);
+            }
+        });
     }
 });
 
-function setStart(latlng) {
+function setStart(latlng, displayName) {
     state.startLatLng = latlng;
     if (layers.startMarker) map.removeLayer(layers.startMarker);
     layers.startMarker = createLocationMarker(latlng, 'start').addTo(map);
-    layers.startMarker.on('dragend', (e) => { state.startLatLng = e.target.getLatLng(); });
-    document.getElementById('start-input').value = `${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)}`;
+    layers.startMarker.on('dragend', (e) => {
+        state.startLatLng = e.target.getLatLng();
+        reverseGeocode(e.target.getLatLng().lat, e.target.getLatLng().lng).then(result => {
+            if (result && result.display_name) {
+                document.getElementById('start-input').value = getShortName(result);
+            }
+        });
+    });
+    document.getElementById('start-input').value = displayName || `${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)}`;
     state.selectingStart = false;
 }
 
-function setEnd(latlng) {
+function setEnd(latlng, displayName) {
     state.endLatLng = latlng;
     if (layers.endMarker) map.removeLayer(layers.endMarker);
     layers.endMarker = createLocationMarker(latlng, 'end').addTo(map);
-    layers.endMarker.on('dragend', (e) => { state.endLatLng = e.target.getLatLng(); });
-    document.getElementById('end-input').value = `${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)}`;
+    layers.endMarker.on('dragend', (e) => {
+        state.endLatLng = e.target.getLatLng();
+        reverseGeocode(e.target.getLatLng().lat, e.target.getLatLng().lng).then(result => {
+            if (result && result.display_name) {
+                document.getElementById('end-input').value = getShortName(result);
+            }
+        });
+    });
+    document.getElementById('end-input').value = displayName || `${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)}`;
     state.selectingStart = true;
 }
 
@@ -334,6 +545,12 @@ function useMyLocation() {
             const latlng = L.latLng(pos.coords.latitude, pos.coords.longitude);
             setStart(latlng);
             map.flyTo(latlng, 15, { duration: 1.2 });
+            // Reverse geocode for display
+            reverseGeocode(latlng.lat, latlng.lng).then(result => {
+                if (result && result.display_name) {
+                    document.getElementById('start-input').value = getShortName(result);
+                }
+            });
             showToast('Location acquired successfully.');
         },
         () => {
@@ -1436,6 +1653,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.key === 'Enter') _sendChatMessage();
         });
     }
+
+    // ── Geocoding Autocomplete ──────────────────────────────
+    initGeocodeInput('start-input', 'start-dropdown', (latlng, name) => {
+        setStart(latlng, name);
+        map.flyTo(latlng, 15, { duration: 1.2 });
+    });
+    initGeocodeInput('end-input', 'end-dropdown', (latlng, name) => {
+        setEnd(latlng, name);
+        map.flyTo(latlng, 15, { duration: 1.2 });
+    });
 
     // Load data and render layers
     loadAllData();

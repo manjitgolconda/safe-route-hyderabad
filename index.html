@@ -62,7 +62,10 @@
                 <div class="input-group">
                     <label for="start-input">Origin</label>
                     <div class="input-row">
-                        <input type="text" id="start-input" placeholder="Click map or type address…" autocomplete="off">
+                        <div class="geocode-wrapper">
+                            <input type="text" id="start-input" placeholder="Search place name…" autocomplete="off">
+                            <div class="geocode-dropdown" id="start-dropdown"></div>
+                        </div>
                         <button id="btn-my-location" class="btn-icon" title="Use my current location">
                             <i data-lucide="locate-fixed"></i>
                         </button>
@@ -70,7 +73,10 @@
                 </div>
                 <div class="input-group">
                     <label for="end-input">Destination</label>
-                    <input type="text" id="end-input" placeholder="Click map or type address…" autocomplete="off">
+                    <div class="geocode-wrapper">
+                        <input type="text" id="end-input" placeholder="Search place name…" autocomplete="off">
+                        <div class="geocode-dropdown" id="end-dropdown"></div>
+                    </div>
                 </div>
                 <div class="btn-row">
                     <button id="btn-find-route" class="btn-primary">
