@@ -1,0 +1,141 @@
+{
+  "commissionerates": [
+    {
+      "name": "Hyderabad City",
+      "code": "HYD",
+      "hq_lat": 17.3891,
+      "hq_lng": 78.4714,
+      "jurisdiction": "Historic core city including Charminar, Abids, Nampally, Koti, Begumpet",
+      "total_cases_2025": 30690,
+      "change_percent": -15,
+      "key_strength": "Dense CCTV surveillance, legacy infrastructure, SHE Team HQ"
+    },
+    {
+      "name": "Cyberabad",
+      "code": "CYB",
+      "hq_lat": 17.4482,
+      "hq_lng": 78.3914,
+      "jurisdiction": "IT Corridor — Gachibowli, Madhapur, Raidurgam, Narsingi, Kondapur",
+      "total_cases_2025": 37243,
+      "change_percent": -1.18,
+      "key_strength": "Specialized cyber wing, high-density commercial policing"
+    },
+    {
+      "name": "Malkajgiri (Rachakonda)",
+      "code": "MLK",
+      "hq_lat": 17.4456,
+      "hq_lng": 78.5667,
+      "jurisdiction": "Eastern & south-eastern — Malkajgiri, Uppal, LB Nagar, Vanasthalipuram",
+      "total_cases_2025": 33040,
+      "change_percent": 15.4,
+      "key_strength": "Expanding jurisdiction, rapid-response units for peri-urban areas"
+    },
+    {
+      "name": "Fourth City (New)",
+      "code": "4TH",
+      "hq_lat": 17.5100,
+      "hq_lng": 78.3900,
+      "jurisdiction": "Newly conceptualized northern expansion zones",
+      "total_cases_2025": null,
+      "change_percent": null,
+      "key_strength": "Under formation — designed for rapid population influx zones"
+    }
+  ],
+
+  "specialized_units": [
+    {
+      "name": "SHE Teams",
+      "type": "women_safety",
+      "lat": 17.3891,
+      "lng": 78.4714,
+      "description": "Women's safety patrol teams operating across all commissionerates. Mandate expanded post-2022.",
+      "icon": "shield-check",
+      "key_stats": {
+        "active_teams": 30,
+        "cases_handled_2025": 2625,
+        "coverage": "All 4 commissionerates"
+      }
+    },
+    {
+      "name": "Cybercrime Wing HQ",
+      "type": "cybercrime",
+      "lat": 17.4200,
+      "lng": 78.4500,
+      "description": "Centralized cybercrime investigation hub handling financial fraud, digital arrests, and OTP scams.",
+      "icon": "cpu",
+      "key_stats": {
+        "cases_2025": 3735,
+        "financial_loss_crore": 296.32,
+        "recovery_crore": 39.3,
+        "recovery_percent": 13
+      }
+    },
+    {
+      "name": "TGANB (Narcotics Bureau)",
+      "type": "narcotics",
+      "lat": 17.4100,
+      "lng": 78.4700,
+      "description": "Telangana Anti-Narcotics Bureau — dedicated narcotics enforcement and drug seizure operations.",
+      "icon": "shield-alert",
+      "key_stats": {
+        "arrests_2024": 315,
+        "cases_2024": 148,
+        "major_seizures": true
+      }
+    },
+    {
+      "name": "Traffic Police Wing",
+      "type": "traffic",
+      "lat": 17.3950,
+      "lng": 78.4800,
+      "description": "Digitized traffic enforcement division handling drunk driving, minor driving, and road safety.",
+      "icon": "car",
+      "key_stats": {
+        "drunk_driving_cases_2024": 52000,
+        "minor_driving_cases_2025": 7808,
+        "vehicle_registrations_cancelled": 1455,
+        "orr_fatalities_2025": 80
+      }
+    }
+  ],
+
+  "cybercrime_typology": [
+    {
+      "type": "Part-Time Job Scams",
+      "volume": 2500,
+      "financial_loss": "Very High",
+      "vulnerability": "Economic anxiety, desire for remote work"
+    },
+    {
+      "type": "Trading / Investment Fraud",
+      "volume": 2000,
+      "financial_loss": "Extreme (> ₹200 Cr)",
+      "vulnerability": "Greed, lack of financial literacy"
+    },
+    {
+      "type": "Digital Arrests / Extortion",
+      "volume": 1119,
+      "financial_loss": "High (> ₹15 Cr)",
+      "vulnerability": "Fear of state authority, psychological isolation"
+    },
+    {
+      "type": "OTP / Phishing Scams",
+      "volume": 3000,
+      "financial_loss": "Medium",
+      "vulnerability": "Lack of digital security awareness"
+    }
+  ],
+
+  "enforcement_highlights": {
+    "cctv_cameras_deployed": 500000,
+    "she_teams_count": 30,
+    "drunk_driving_booked_2024": 52000,
+    "minor_driving_booked_2025": 7808,
+    "cyber_fraud_loss_2024_crore": 296.32,
+    "cyber_fraud_loss_2025_cyberabad_crore": 404.61,
+    "property_detection_rate_percent": 54,
+    "property_recovery_rate_percent": 61,
+    "property_recovered_crore": 22.30,
+    "property_lost_crore": 36.74
+  }
+}

@@ -1,0 +1,2726 @@
+[
+  {
+    "id": 1,
+    "crime_type": "House Breaking",
+    "lat": 17.337973,
+    "lng": 78.537878,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 2,
+    "crime_type": "Automobile Theft",
+    "lat": 17.409786,
+    "lng": 78.451156,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 3,
+    "crime_type": "House Breaking",
+    "lat": 17.35308,
+    "lng": 78.470202,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 4,
+    "crime_type": "Minor Theft",
+    "lat": 17.429456,
+    "lng": 78.511952,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 5,
+    "crime_type": "Minor Theft",
+    "lat": 17.437478,
+    "lng": 78.498376,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 6,
+    "crime_type": "Cybercrime",
+    "lat": 17.406037,
+    "lng": 78.446664,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 7,
+    "crime_type": "Automobile Theft",
+    "lat": 17.448206,
+    "lng": 78.506981,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 8,
+    "crime_type": "Crime Against Women",
+    "lat": 17.445322,
+    "lng": 78.512447,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 9,
+    "crime_type": "House Breaking",
+    "lat": 17.341061,
+    "lng": 78.552739,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 10,
+    "crime_type": "Rape",
+    "lat": 17.449185,
+    "lng": 78.496702,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 11,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.343126,
+    "lng": 78.557387,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 12,
+    "crime_type": "Crime Against Women",
+    "lat": 17.42655,
+    "lng": 78.435053,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 13,
+    "crime_type": "House Breaking",
+    "lat": 17.363152,
+    "lng": 78.481048,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 14,
+    "crime_type": "Minor Theft",
+    "lat": 17.355748,
+    "lng": 78.450737,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 15,
+    "crime_type": "Murder",
+    "lat": 17.351619,
+    "lng": 78.552615,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 16,
+    "crime_type": "Rape",
+    "lat": 17.399281,
+    "lng": 78.455055,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 17,
+    "crime_type": "Robbery",
+    "lat": 17.370464,
+    "lng": 78.473967,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 18,
+    "crime_type": "Minor Theft",
+    "lat": 17.347053,
+    "lng": 78.471496,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 19,
+    "crime_type": "Minor Theft",
+    "lat": 17.415013,
+    "lng": 78.458954,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 20,
+    "crime_type": "Minor Theft",
+    "lat": 17.351818,
+    "lng": 78.478692,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 21,
+    "crime_type": "House Breaking",
+    "lat": 17.44753,
+    "lng": 78.504198,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 22,
+    "crime_type": "Automobile Theft",
+    "lat": 17.439367,
+    "lng": 78.504857,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 23,
+    "crime_type": "Murder",
+    "lat": 17.35116,
+    "lng": 78.474322,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 24,
+    "crime_type": "Rape",
+    "lat": 17.345819,
+    "lng": 78.552211,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 25,
+    "crime_type": "Automobile Theft",
+    "lat": 17.440416,
+    "lng": 78.501587,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 26,
+    "crime_type": "Crime Against Women",
+    "lat": 17.362763,
+    "lng": 78.575964,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 27,
+    "crime_type": "Minor Theft",
+    "lat": 17.367238,
+    "lng": 78.469317,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 28,
+    "crime_type": "Crime Against Women",
+    "lat": 17.415565,
+    "lng": 78.441615,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 29,
+    "crime_type": "House Breaking",
+    "lat": 17.344845,
+    "lng": 78.545344,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 30,
+    "crime_type": "Automobile Theft",
+    "lat": 17.34866,
+    "lng": 78.561124,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 31,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.428829,
+    "lng": 78.498666,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 32,
+    "crime_type": "Robbery",
+    "lat": 17.412365,
+    "lng": 78.434148,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 33,
+    "crime_type": "Minor Theft",
+    "lat": 17.365225,
+    "lng": 78.472087,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 34,
+    "crime_type": "Automobile Theft",
+    "lat": 17.407045,
+    "lng": 78.447783,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 35,
+    "crime_type": "Automobile Theft",
+    "lat": 17.361946,
+    "lng": 78.559588,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 36,
+    "crime_type": "Robbery",
+    "lat": 17.361703,
+    "lng": 78.472626,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 37,
+    "crime_type": "Minor Theft",
+    "lat": 17.437513,
+    "lng": 78.508142,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 38,
+    "crime_type": "Robbery",
+    "lat": 17.428134,
+    "lng": 78.454756,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 39,
+    "crime_type": "Robbery",
+    "lat": 17.450923,
+    "lng": 78.501011,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 40,
+    "crime_type": "Minor Theft",
+    "lat": 17.446453,
+    "lng": 78.513617,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 41,
+    "crime_type": "Kidnapping",
+    "lat": 17.422355,
+    "lng": 78.461944,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 42,
+    "crime_type": "Automobile Theft",
+    "lat": 17.423157,
+    "lng": 78.511196,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 43,
+    "crime_type": "Kidnapping",
+    "lat": 17.356003,
+    "lng": 78.483849,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 44,
+    "crime_type": "Automobile Theft",
+    "lat": 17.435837,
+    "lng": 78.524738,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 45,
+    "crime_type": "House Breaking",
+    "lat": 17.410999,
+    "lng": 78.469853,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 46,
+    "crime_type": "Rape",
+    "lat": 17.457113,
+    "lng": 78.489542,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 47,
+    "crime_type": "Minor Theft",
+    "lat": 17.437746,
+    "lng": 78.503989,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 48,
+    "crime_type": "House Breaking",
+    "lat": 17.425258,
+    "lng": 78.461673,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 49,
+    "crime_type": "Crime Against Women",
+    "lat": 17.365536,
+    "lng": 78.484343,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 50,
+    "crime_type": "Cybercrime",
+    "lat": 17.409983,
+    "lng": 78.436273,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 51,
+    "crime_type": "Crime Against Women",
+    "lat": 17.433176,
+    "lng": 78.491104,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 52,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.427523,
+    "lng": 78.504106,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 53,
+    "crime_type": "Kidnapping",
+    "lat": 17.370044,
+    "lng": 78.479618,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 54,
+    "crime_type": "Murder",
+    "lat": 17.452395,
+    "lng": 78.510696,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 55,
+    "crime_type": "Cybercrime",
+    "lat": 17.443664,
+    "lng": 78.497678,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 56,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.357155,
+    "lng": 78.475761,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 57,
+    "crime_type": "Cybercrime",
+    "lat": 17.404674,
+    "lng": 78.452279,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 58,
+    "crime_type": "Automobile Theft",
+    "lat": 17.364277,
+    "lng": 78.474619,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 59,
+    "crime_type": "Minor Theft",
+    "lat": 17.374702,
+    "lng": 78.483689,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 60,
+    "crime_type": "Kidnapping",
+    "lat": 17.44814,
+    "lng": 78.514121,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 61,
+    "crime_type": "Robbery",
+    "lat": 17.443129,
+    "lng": 78.501645,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 62,
+    "crime_type": "Robbery",
+    "lat": 17.368831,
+    "lng": 78.469055,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 63,
+    "crime_type": "Cybercrime",
+    "lat": 17.404557,
+    "lng": 78.435388,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 64,
+    "crime_type": "House Breaking",
+    "lat": 17.421876,
+    "lng": 78.496699,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 65,
+    "crime_type": "House Breaking",
+    "lat": 17.369016,
+    "lng": 78.478278,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 66,
+    "crime_type": "Crime Against Women",
+    "lat": 17.372064,
+    "lng": 78.557295,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 67,
+    "crime_type": "Kidnapping",
+    "lat": 17.438959,
+    "lng": 78.493058,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 68,
+    "crime_type": "House Breaking",
+    "lat": 17.364264,
+    "lng": 78.552529,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 69,
+    "crime_type": "Robbery",
+    "lat": 17.399883,
+    "lng": 78.443082,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 70,
+    "crime_type": "Kidnapping",
+    "lat": 17.357692,
+    "lng": 78.483254,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 71,
+    "crime_type": "Murder",
+    "lat": 17.361353,
+    "lng": 78.46968,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 72,
+    "crime_type": "Automobile Theft",
+    "lat": 17.418364,
+    "lng": 78.455643,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 73,
+    "crime_type": "Robbery",
+    "lat": 17.413645,
+    "lng": 78.443712,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 74,
+    "crime_type": "Minor Theft",
+    "lat": 17.364621,
+    "lng": 78.48217,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 75,
+    "crime_type": "Murder",
+    "lat": 17.348389,
+    "lng": 78.565132,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 76,
+    "crime_type": "Crime Against Women",
+    "lat": 17.359899,
+    "lng": 78.572398,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 77,
+    "crime_type": "Automobile Theft",
+    "lat": 17.408859,
+    "lng": 78.466991,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 78,
+    "crime_type": "Robbery",
+    "lat": 17.420002,
+    "lng": 78.444316,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 79,
+    "crime_type": "Murder",
+    "lat": 17.429559,
+    "lng": 78.504574,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 80,
+    "crime_type": "Kidnapping",
+    "lat": 17.420966,
+    "lng": 78.451851,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 81,
+    "crime_type": "Minor Theft",
+    "lat": 17.440269,
+    "lng": 78.507484,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 82,
+    "crime_type": "Murder",
+    "lat": 17.439154,
+    "lng": 78.503289,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 83,
+    "crime_type": "Minor Theft",
+    "lat": 17.336646,
+    "lng": 78.559008,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 84,
+    "crime_type": "Kidnapping",
+    "lat": 17.375511,
+    "lng": 78.480755,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 85,
+    "crime_type": "Rape",
+    "lat": 17.352606,
+    "lng": 78.479559,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 86,
+    "crime_type": "House Breaking",
+    "lat": 17.357134,
+    "lng": 78.563267,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 87,
+    "crime_type": "Crime Against Women",
+    "lat": 17.340395,
+    "lng": 78.478179,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 88,
+    "crime_type": "Crime Against Women",
+    "lat": 17.408672,
+    "lng": 78.444269,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 89,
+    "crime_type": "Crime Against Women",
+    "lat": 17.404338,
+    "lng": 78.427902,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 90,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.3516,
+    "lng": 78.550941,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 91,
+    "crime_type": "Robbery",
+    "lat": 17.408459,
+    "lng": 78.470492,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 92,
+    "crime_type": "House Breaking",
+    "lat": 17.443106,
+    "lng": 78.497643,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 93,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.361536,
+    "lng": 78.476029,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 94,
+    "crime_type": "Robbery",
+    "lat": 17.43731,
+    "lng": 78.499606,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 95,
+    "crime_type": "Crime Against Women",
+    "lat": 17.361416,
+    "lng": 78.477962,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 96,
+    "crime_type": "Cybercrime",
+    "lat": 17.415794,
+    "lng": 78.452901,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 97,
+    "crime_type": "Rape",
+    "lat": 17.346184,
+    "lng": 78.55426,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 98,
+    "crime_type": "Robbery",
+    "lat": 17.368221,
+    "lng": 78.456684,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 99,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.433418,
+    "lng": 78.5062,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 100,
+    "crime_type": "Murder",
+    "lat": 17.368278,
+    "lng": 78.473201,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 101,
+    "crime_type": "House Breaking",
+    "lat": 17.403926,
+    "lng": 78.44426,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 102,
+    "crime_type": "House Breaking",
+    "lat": 17.410362,
+    "lng": 78.441684,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 103,
+    "crime_type": "Robbery",
+    "lat": 17.409924,
+    "lng": 78.451623,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 104,
+    "crime_type": "House Breaking",
+    "lat": 17.431921,
+    "lng": 78.513266,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 105,
+    "crime_type": "Minor Theft",
+    "lat": 17.349083,
+    "lng": 78.482404,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 106,
+    "crime_type": "Murder",
+    "lat": 17.372794,
+    "lng": 78.47479,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 107,
+    "crime_type": "House Breaking",
+    "lat": 17.347731,
+    "lng": 78.540967,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 108,
+    "crime_type": "Crime Against Women",
+    "lat": 17.416005,
+    "lng": 78.453779,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 109,
+    "crime_type": "Minor Theft",
+    "lat": 17.344901,
+    "lng": 78.555703,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 110,
+    "crime_type": "Murder",
+    "lat": 17.376862,
+    "lng": 78.478712,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 111,
+    "crime_type": "Kidnapping",
+    "lat": 17.356782,
+    "lng": 78.464241,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 112,
+    "crime_type": "Crime Against Women",
+    "lat": 17.441041,
+    "lng": 78.48104,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 113,
+    "crime_type": "Minor Theft",
+    "lat": 17.447056,
+    "lng": 78.486141,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 114,
+    "crime_type": "Automobile Theft",
+    "lat": 17.361445,
+    "lng": 78.482671,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 115,
+    "crime_type": "Robbery",
+    "lat": 17.389552,
+    "lng": 78.446335,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 116,
+    "crime_type": "Crime Against Women",
+    "lat": 17.423454,
+    "lng": 78.493764,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 117,
+    "crime_type": "House Breaking",
+    "lat": 17.356051,
+    "lng": 78.466743,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 118,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.353959,
+    "lng": 78.473828,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 119,
+    "crime_type": "Automobile Theft",
+    "lat": 17.351295,
+    "lng": 78.462663,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 120,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.34475,
+    "lng": 78.560516,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 121,
+    "crime_type": "Robbery",
+    "lat": 17.355035,
+    "lng": 78.483314,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 122,
+    "crime_type": "Rape",
+    "lat": 17.346428,
+    "lng": 78.551913,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 123,
+    "crime_type": "Minor Theft",
+    "lat": 17.353058,
+    "lng": 78.481614,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 124,
+    "crime_type": "Rape",
+    "lat": 17.365463,
+    "lng": 78.471844,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 125,
+    "crime_type": "House Breaking",
+    "lat": 17.439999,
+    "lng": 78.499561,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 126,
+    "crime_type": "Robbery",
+    "lat": 17.419998,
+    "lng": 78.428985,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 127,
+    "crime_type": "Minor Theft",
+    "lat": 17.351259,
+    "lng": 78.548772,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 128,
+    "crime_type": "Robbery",
+    "lat": 17.357698,
+    "lng": 78.549076,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 129,
+    "crime_type": "Automobile Theft",
+    "lat": 17.431568,
+    "lng": 78.49903,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 130,
+    "crime_type": "Cybercrime",
+    "lat": 17.417773,
+    "lng": 78.429706,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 131,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.350826,
+    "lng": 78.469774,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 132,
+    "crime_type": "Murder",
+    "lat": 17.365042,
+    "lng": 78.480744,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 133,
+    "crime_type": "Automobile Theft",
+    "lat": 17.415927,
+    "lng": 78.440061,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 134,
+    "crime_type": "Robbery",
+    "lat": 17.427738,
+    "lng": 78.516958,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 135,
+    "crime_type": "Kidnapping",
+    "lat": 17.369802,
+    "lng": 78.550049,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 136,
+    "crime_type": "Automobile Theft",
+    "lat": 17.355698,
+    "lng": 78.570484,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 137,
+    "crime_type": "Robbery",
+    "lat": 17.416912,
+    "lng": 78.443756,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 138,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.351196,
+    "lng": 78.463411,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 139,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.344443,
+    "lng": 78.539264,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 140,
+    "crime_type": "Robbery",
+    "lat": 17.453343,
+    "lng": 78.502796,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 141,
+    "crime_type": "Robbery",
+    "lat": 17.428415,
+    "lng": 78.44541,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 142,
+    "crime_type": "Minor Theft",
+    "lat": 17.444707,
+    "lng": 78.51911,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 143,
+    "crime_type": "Murder",
+    "lat": 17.443554,
+    "lng": 78.475926,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 144,
+    "crime_type": "Rape",
+    "lat": 17.415059,
+    "lng": 78.453312,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 145,
+    "crime_type": "House Breaking",
+    "lat": 17.363091,
+    "lng": 78.479292,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 146,
+    "crime_type": "House Breaking",
+    "lat": 17.410946,
+    "lng": 78.454666,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 147,
+    "crime_type": "Cybercrime",
+    "lat": 17.370407,
+    "lng": 78.48397,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 148,
+    "crime_type": "Rape",
+    "lat": 17.439072,
+    "lng": 78.4984,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 149,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.440013,
+    "lng": 78.498161,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 150,
+    "crime_type": "Robbery",
+    "lat": 17.357855,
+    "lng": 78.555795,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 151,
+    "crime_type": "Rape",
+    "lat": 17.403991,
+    "lng": 78.438,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 152,
+    "crime_type": "Robbery",
+    "lat": 17.441167,
+    "lng": 78.476619,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 153,
+    "crime_type": "Kidnapping",
+    "lat": 17.426205,
+    "lng": 78.452761,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 154,
+    "crime_type": "Robbery",
+    "lat": 17.358128,
+    "lng": 78.480352,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 155,
+    "crime_type": "Minor Theft",
+    "lat": 17.449176,
+    "lng": 78.485342,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 156,
+    "crime_type": "Rape",
+    "lat": 17.451015,
+    "lng": 78.511224,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 157,
+    "crime_type": "Robbery",
+    "lat": 17.360156,
+    "lng": 78.47253,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 158,
+    "crime_type": "Minor Theft",
+    "lat": 17.363412,
+    "lng": 78.475337,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 159,
+    "crime_type": "Rape",
+    "lat": 17.343614,
+    "lng": 78.543325,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 160,
+    "crime_type": "Murder",
+    "lat": 17.366033,
+    "lng": 78.481272,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 161,
+    "crime_type": "Robbery",
+    "lat": 17.451808,
+    "lng": 78.484439,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 162,
+    "crime_type": "House Breaking",
+    "lat": 17.451952,
+    "lng": 78.492452,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 163,
+    "crime_type": "Murder",
+    "lat": 17.435708,
+    "lng": 78.505276,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 164,
+    "crime_type": "Kidnapping",
+    "lat": 17.349805,
+    "lng": 78.478339,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 165,
+    "crime_type": "Murder",
+    "lat": 17.36057,
+    "lng": 78.481659,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 166,
+    "crime_type": "Cybercrime",
+    "lat": 17.404002,
+    "lng": 78.446625,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 167,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.351371,
+    "lng": 78.553257,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 168,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.428346,
+    "lng": 78.496774,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 169,
+    "crime_type": "Crime Against Women",
+    "lat": 17.350467,
+    "lng": 78.546539,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 170,
+    "crime_type": "Robbery",
+    "lat": 17.365283,
+    "lng": 78.452681,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 171,
+    "crime_type": "House Breaking",
+    "lat": 17.435759,
+    "lng": 78.500642,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 172,
+    "crime_type": "Robbery",
+    "lat": 17.360415,
+    "lng": 78.549047,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 173,
+    "crime_type": "Rape",
+    "lat": 17.358232,
+    "lng": 78.484492,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 174,
+    "crime_type": "Murder",
+    "lat": 17.357512,
+    "lng": 78.471104,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 175,
+    "crime_type": "Minor Theft",
+    "lat": 17.356127,
+    "lng": 78.461767,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 176,
+    "crime_type": "Robbery",
+    "lat": 17.35827,
+    "lng": 78.480212,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 177,
+    "crime_type": "Minor Theft",
+    "lat": 17.453163,
+    "lng": 78.485424,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 178,
+    "crime_type": "House Breaking",
+    "lat": 17.414897,
+    "lng": 78.450008,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 179,
+    "crime_type": "House Breaking",
+    "lat": 17.350778,
+    "lng": 78.556937,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 180,
+    "crime_type": "Minor Theft",
+    "lat": 17.343388,
+    "lng": 78.457682,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 181,
+    "crime_type": "Murder",
+    "lat": 17.339368,
+    "lng": 78.547325,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 182,
+    "crime_type": "Minor Theft",
+    "lat": 17.40652,
+    "lng": 78.45172,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 183,
+    "crime_type": "Robbery",
+    "lat": 17.434514,
+    "lng": 78.444564,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 184,
+    "crime_type": "Crime Against Women",
+    "lat": 17.420289,
+    "lng": 78.457441,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 185,
+    "crime_type": "House Breaking",
+    "lat": 17.348827,
+    "lng": 78.542028,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 186,
+    "crime_type": "Murder",
+    "lat": 17.344032,
+    "lng": 78.537941,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 187,
+    "crime_type": "Crime Against Women",
+    "lat": 17.455062,
+    "lng": 78.480057,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 188,
+    "crime_type": "Cybercrime",
+    "lat": 17.42151,
+    "lng": 78.45039,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 189,
+    "crime_type": "Automobile Theft",
+    "lat": 17.353075,
+    "lng": 78.471984,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 190,
+    "crime_type": "Kidnapping",
+    "lat": 17.437268,
+    "lng": 78.50209,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 191,
+    "crime_type": "Automobile Theft",
+    "lat": 17.345432,
+    "lng": 78.552967,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 192,
+    "crime_type": "Minor Theft",
+    "lat": 17.383134,
+    "lng": 78.474767,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 193,
+    "crime_type": "Murder",
+    "lat": 17.358129,
+    "lng": 78.481029,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 194,
+    "crime_type": "House Breaking",
+    "lat": 17.362382,
+    "lng": 78.457416,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 195,
+    "crime_type": "Automobile Theft",
+    "lat": 17.354988,
+    "lng": 78.487152,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 196,
+    "crime_type": "Murder",
+    "lat": 17.446825,
+    "lng": 78.515949,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 197,
+    "crime_type": "House Breaking",
+    "lat": 17.425396,
+    "lng": 78.442804,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 198,
+    "crime_type": "Murder",
+    "lat": 17.343254,
+    "lng": 78.540062,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 199,
+    "crime_type": "Cybercrime",
+    "lat": 17.432415,
+    "lng": 78.492684,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 200,
+    "crime_type": "Robbery",
+    "lat": 17.365627,
+    "lng": 78.464034,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 201,
+    "crime_type": "Minor Theft",
+    "lat": 17.364056,
+    "lng": 78.449902,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 202,
+    "crime_type": "Crime Against Women",
+    "lat": 17.345681,
+    "lng": 78.556794,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 203,
+    "crime_type": "House Breaking",
+    "lat": 17.440862,
+    "lng": 78.510817,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 204,
+    "crime_type": "Crime Against Women",
+    "lat": 17.414372,
+    "lng": 78.490442,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 205,
+    "crime_type": "Robbery",
+    "lat": 17.436016,
+    "lng": 78.500133,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 206,
+    "crime_type": "House Breaking",
+    "lat": 17.436539,
+    "lng": 78.490083,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 207,
+    "crime_type": "Cybercrime",
+    "lat": 17.4229,
+    "lng": 78.461815,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 208,
+    "crime_type": "Robbery",
+    "lat": 17.368762,
+    "lng": 78.47429,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 209,
+    "crime_type": "Rape",
+    "lat": 17.443183,
+    "lng": 78.505994,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 210,
+    "crime_type": "Minor Theft",
+    "lat": 17.438781,
+    "lng": 78.519662,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 211,
+    "crime_type": "House Breaking",
+    "lat": 17.362549,
+    "lng": 78.469011,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 212,
+    "crime_type": "House Breaking",
+    "lat": 17.447952,
+    "lng": 78.500802,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 213,
+    "crime_type": "Kidnapping",
+    "lat": 17.3556,
+    "lng": 78.479508,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 214,
+    "crime_type": "Minor Theft",
+    "lat": 17.394812,
+    "lng": 78.43126,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 215,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.433239,
+    "lng": 78.50961,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 216,
+    "crime_type": "Cybercrime",
+    "lat": 17.418948,
+    "lng": 78.461576,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 217,
+    "crime_type": "House Breaking",
+    "lat": 17.40523,
+    "lng": 78.461398,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 218,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.346815,
+    "lng": 78.544584,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 219,
+    "crime_type": "Cybercrime",
+    "lat": 17.414773,
+    "lng": 78.448193,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 220,
+    "crime_type": "Murder",
+    "lat": 17.361784,
+    "lng": 78.476786,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 221,
+    "crime_type": "House Breaking",
+    "lat": 17.344599,
+    "lng": 78.570263,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 222,
+    "crime_type": "Robbery",
+    "lat": 17.437323,
+    "lng": 78.488682,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 223,
+    "crime_type": "Murder",
+    "lat": 17.349275,
+    "lng": 78.556147,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 224,
+    "crime_type": "Cybercrime",
+    "lat": 17.433682,
+    "lng": 78.506079,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 225,
+    "crime_type": "House Breaking",
+    "lat": 17.357419,
+    "lng": 78.556741,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 226,
+    "crime_type": "Robbery",
+    "lat": 17.370768,
+    "lng": 78.468492,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 227,
+    "crime_type": "Murder",
+    "lat": 17.442496,
+    "lng": 78.495768,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 228,
+    "crime_type": "Automobile Theft",
+    "lat": 17.41711,
+    "lng": 78.445646,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 229,
+    "crime_type": "Minor Theft",
+    "lat": 17.352026,
+    "lng": 78.567966,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 230,
+    "crime_type": "Crime Against Women",
+    "lat": 17.434147,
+    "lng": 78.496969,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 231,
+    "crime_type": "House Breaking",
+    "lat": 17.338667,
+    "lng": 78.542935,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 232,
+    "crime_type": "Minor Theft",
+    "lat": 17.436819,
+    "lng": 78.511399,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 233,
+    "crime_type": "Minor Theft",
+    "lat": 17.349056,
+    "lng": 78.532128,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 234,
+    "crime_type": "Minor Theft",
+    "lat": 17.36378,
+    "lng": 78.463798,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 235,
+    "crime_type": "Kidnapping",
+    "lat": 17.44376,
+    "lng": 78.498368,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 236,
+    "crime_type": "Kidnapping",
+    "lat": 17.349042,
+    "lng": 78.545658,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 237,
+    "crime_type": "Robbery",
+    "lat": 17.408103,
+    "lng": 78.467943,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 238,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.36027,
+    "lng": 78.481463,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 239,
+    "crime_type": "Rape",
+    "lat": 17.363339,
+    "lng": 78.489259,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 240,
+    "crime_type": "Automobile Theft",
+    "lat": 17.341765,
+    "lng": 78.556876,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 241,
+    "crime_type": "Kidnapping",
+    "lat": 17.34771,
+    "lng": 78.55617,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 242,
+    "crime_type": "Minor Theft",
+    "lat": 17.412453,
+    "lng": 78.456236,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 243,
+    "crime_type": "Rape",
+    "lat": 17.349989,
+    "lng": 78.459516,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 244,
+    "crime_type": "Murder",
+    "lat": 17.355547,
+    "lng": 78.46843,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 245,
+    "crime_type": "House Breaking",
+    "lat": 17.348003,
+    "lng": 78.562095,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 246,
+    "crime_type": "Murder",
+    "lat": 17.433595,
+    "lng": 78.478533,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Secunderabad"
+  },
+  {
+    "id": 247,
+    "crime_type": "Cybercrime",
+    "lat": 17.4011,
+    "lng": 78.448401,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Banjara Hills"
+  },
+  {
+    "id": 248,
+    "crime_type": "Attempt to Murder",
+    "lat": 17.363088,
+    "lng": 78.480428,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 249,
+    "crime_type": "Robbery",
+    "lat": 17.364483,
+    "lng": 78.478263,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Charminar"
+  },
+  {
+    "id": 250,
+    "crime_type": "House Breaking",
+    "lat": 17.355013,
+    "lng": 78.548492,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "LB Nagar"
+  },
+  {
+    "id": 251,
+    "crime_type": "Armed Robbery",
+    "lat": 17.3846,
+    "lng": 78.4867,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Koti",
+    "date": "2025-01-15",
+    "source": "DOCX"
+  },
+  {
+    "id": 252,
+    "crime_type": "Gang Violence",
+    "lat": 17.309,
+    "lng": 78.4682,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Chandrayangutta",
+    "date": "2025-10-30",
+    "source": "DOCX"
+  },
+  {
+    "id": 253,
+    "crime_type": "Domestic Violence",
+    "lat": 17.3364,
+    "lng": 78.5558,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Vanasthalipuram",
+    "date": "2025-11-17",
+    "source": "DOCX"
+  },
+  {
+    "id": 254,
+    "crime_type": "Armed Robbery",
+    "lat": 17.4192,
+    "lng": 78.3813,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Raidurgam",
+    "date": "2025-02-02",
+    "source": "DOCX"
+  },
+  {
+    "id": 255,
+    "crime_type": "Murder",
+    "lat": 17.3457,
+    "lng": 78.5522,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "L.B. Nagar",
+    "date": "2025-02-20",
+    "source": "DOCX"
+  },
+  {
+    "id": 256,
+    "crime_type": "Murder",
+    "lat": 17.4192,
+    "lng": 78.3813,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Raidurgam",
+    "date": "2025-11-17",
+    "source": "DOCX"
+  },
+  {
+    "id": 257,
+    "crime_type": "Cyber Fraud",
+    "lat": 17.4496,
+    "lng": 78.5333,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Malkajgiri",
+    "date": "2026-02-21",
+    "source": "DOCX"
+  },
+  {
+    "id": 258,
+    "crime_type": "Major Theft",
+    "lat": 17.3753,
+    "lng": 78.4744,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Chintalapudi",
+    "date": "2025-09-11",
+    "source": "DOCX"
+  },
+  {
+    "id": 259,
+    "crime_type": "Cyber Fraud",
+    "lat": 17.44,
+    "lng": 78.3489,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Gachibowli",
+    "date": "2025-12-23",
+    "source": "DOCX"
+  },
+  {
+    "id": 260,
+    "crime_type": "Sexual Assault",
+    "lat": 17.4326,
+    "lng": 78.407,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Jubilee Hills",
+    "date": "2022-05-28",
+    "source": "DOCX"
+  },
+  {
+    "id": 261,
+    "crime_type": "Narcotics",
+    "lat": 17.385,
+    "lng": 78.4866,
+    "severity_weight": 7,
+    "intensity": 0.7,
+    "area_name": "Hyderabad Central",
+    "date": "2024-12-29",
+    "source": "DOCX"
+  },
+  {
+    "id": 262,
+    "crime_type": "Extortion",
+    "lat": 17.3615,
+    "lng": 78.4746,
+    "severity_weight": 7,
+    "intensity": 0.7,
+    "area_name": "Charminar",
+    "date": "2024-10-12",
+    "source": "DOCX"
+  },
+  {
+    "id": 263,
+    "crime_type": "Automobile Theft",
+    "lat": 17.442,
+    "lng": 78.351,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Gachibowli"
+  },
+  {
+    "id": 264,
+    "crime_type": "Crime Against Women",
+    "lat": 17.438,
+    "lng": 78.346,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Gachibowli"
+  },
+  {
+    "id": 265,
+    "crime_type": "House Breaking",
+    "lat": 17.445,
+    "lng": 78.353,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Gachibowli"
+  },
+  {
+    "id": 266,
+    "crime_type": "Cybercrime",
+    "lat": 17.441,
+    "lng": 78.348,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Gachibowli"
+  },
+  {
+    "id": 267,
+    "crime_type": "Robbery",
+    "lat": 17.443,
+    "lng": 78.35,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Gachibowli"
+  },
+  {
+    "id": 268,
+    "crime_type": "Chain Snatching",
+    "lat": 17.446,
+    "lng": 78.347,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Gachibowli"
+  },
+  {
+    "id": 269,
+    "crime_type": "Minor Theft",
+    "lat": 17.439,
+    "lng": 78.352,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Gachibowli"
+  },
+  {
+    "id": 270,
+    "crime_type": "Cybercrime",
+    "lat": 17.444,
+    "lng": 78.354,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Gachibowli"
+  },
+  {
+    "id": 271,
+    "crime_type": "Automobile Theft",
+    "lat": 17.392,
+    "lng": 78.357,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Narsingi"
+  },
+  {
+    "id": 272,
+    "crime_type": "House Breaking",
+    "lat": 17.388,
+    "lng": 78.353,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Narsingi"
+  },
+  {
+    "id": 273,
+    "crime_type": "Robbery",
+    "lat": 17.391,
+    "lng": 78.356,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Narsingi"
+  },
+  {
+    "id": 274,
+    "crime_type": "Crime Against Women",
+    "lat": 17.387,
+    "lng": 78.354,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Narsingi"
+  },
+  {
+    "id": 275,
+    "crime_type": "Cybercrime",
+    "lat": 17.39,
+    "lng": 78.358,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Narsingi"
+  },
+  {
+    "id": 276,
+    "crime_type": "Minor Theft",
+    "lat": 17.393,
+    "lng": 78.355,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Narsingi"
+  },
+  {
+    "id": 277,
+    "crime_type": "Kidnapping",
+    "lat": 17.389,
+    "lng": 78.352,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Narsingi"
+  },
+  {
+    "id": 278,
+    "crime_type": "Automobile Theft",
+    "lat": 17.45,
+    "lng": 78.393,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Madhapur"
+  },
+  {
+    "id": 279,
+    "crime_type": "Crime Against Women",
+    "lat": 17.447,
+    "lng": 78.389,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Madhapur"
+  },
+  {
+    "id": 280,
+    "crime_type": "Cybercrime",
+    "lat": 17.451,
+    "lng": 78.394,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Madhapur"
+  },
+  {
+    "id": 281,
+    "crime_type": "Robbery",
+    "lat": 17.446,
+    "lng": 78.391,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Madhapur"
+  },
+  {
+    "id": 282,
+    "crime_type": "House Breaking",
+    "lat": 17.449,
+    "lng": 78.392,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Madhapur"
+  },
+  {
+    "id": 283,
+    "crime_type": "Minor Theft",
+    "lat": 17.452,
+    "lng": 78.395,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Madhapur"
+  },
+  {
+    "id": 284,
+    "crime_type": "Automobile Theft",
+    "lat": 17.402,
+    "lng": 78.558,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Uppal"
+  },
+  {
+    "id": 285,
+    "crime_type": "Robbery",
+    "lat": 17.399,
+    "lng": 78.556,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Uppal"
+  },
+  {
+    "id": 286,
+    "crime_type": "House Breaking",
+    "lat": 17.403,
+    "lng": 78.56,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Uppal"
+  },
+  {
+    "id": 287,
+    "crime_type": "Crime Against Women",
+    "lat": 17.398,
+    "lng": 78.555,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Uppal"
+  },
+  {
+    "id": 288,
+    "crime_type": "Cybercrime",
+    "lat": 17.461,
+    "lng": 78.372,
+    "severity_weight": 4,
+    "intensity": 0.4,
+    "area_name": "Kondapur"
+  },
+  {
+    "id": 289,
+    "crime_type": "Automobile Theft",
+    "lat": 17.459,
+    "lng": 78.368,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Kondapur"
+  },
+  {
+    "id": 290,
+    "crime_type": "Robbery",
+    "lat": 17.462,
+    "lng": 78.371,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Kondapur"
+  },
+  {
+    "id": 291,
+    "crime_type": "House Breaking",
+    "lat": 17.451,
+    "lng": 78.535,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Malkajgiri"
+  },
+  {
+    "id": 292,
+    "crime_type": "Crime Against Women",
+    "lat": 17.448,
+    "lng": 78.531,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Malkajgiri"
+  },
+  {
+    "id": 293,
+    "crime_type": "Automobile Theft",
+    "lat": 17.452,
+    "lng": 78.537,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Malkajgiri"
+  },
+  {
+    "id": 294,
+    "crime_type": "Murder",
+    "lat": 17.315,
+    "lng": 78.471,
+    "severity_weight": 10,
+    "intensity": 1.0,
+    "area_name": "Chandrayangutta"
+  },
+  {
+    "id": 295,
+    "crime_type": "Robbery",
+    "lat": 17.318,
+    "lng": 78.473,
+    "severity_weight": 8,
+    "intensity": 0.8,
+    "area_name": "Chandrayangutta"
+  },
+  {
+    "id": 296,
+    "crime_type": "Crime Against Women",
+    "lat": 17.312,
+    "lng": 78.469,
+    "severity_weight": 9,
+    "intensity": 0.9,
+    "area_name": "Chandrayangutta"
+  },
+  {
+    "id": 297,
+    "crime_type": "House Breaking",
+    "lat": 17.334,
+    "lng": 78.553,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Vanasthalipuram"
+  },
+  {
+    "id": 298,
+    "crime_type": "Automobile Theft",
+    "lat": 17.338,
+    "lng": 78.557,
+    "severity_weight": 5,
+    "intensity": 0.5,
+    "area_name": "Vanasthalipuram"
+  },
+  {
+    "id": 299,
+    "crime_type": "Chain Snatching",
+    "lat": 17.386,
+    "lng": 78.488,
+    "severity_weight": 6,
+    "intensity": 0.6,
+    "area_name": "Koti"
+  },
+  {
+    "id": 300,
+    "crime_type": "Minor Theft",
+    "lat": 17.383,
+    "lng": 78.485,
+    "severity_weight": 3,
+    "intensity": 0.3,
+    "area_name": "Koti"
+  }
+]

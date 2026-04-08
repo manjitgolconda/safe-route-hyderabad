@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Mir Alam Tank Road",
+    "lat": 17.3580,
+    "lng": 78.4640,
+    "radius": 500,
+    "lightingLevel": 0.2,
+    "description": "Very dim street lights along the tank bund road."
+  },
+  {
+    "id": 2,
+    "name": "Golnaka Back Lanes",
+    "lat": 17.4101,
+    "lng": 78.5182,
+    "radius": 350,
+    "lightingLevel": 0.3,
+    "description": "Narrow residential lanes with broken street lights."
+  },
+  {
+    "id": 3,
+    "name": "Shaikpet Nala Area",
+    "lat": 17.4120,
+    "lng": 78.4175,
+    "radius": 450,
+    "lightingLevel": 0.15,
+    "description": "Open nala area with almost no lighting after sunset."
+  },
+  {
+    "id": 4,
+    "name": "Langar Houz Bylanes",
+    "lat": 17.3770,
+    "lng": 78.4550,
+    "radius": 400,
+    "lightingLevel": 0.25,
+    "description": "Interior bylanes lack adequate street lighting infrastructure."
+  },
+  {
+    "id": 5,
+    "name": "Uppal Industrial Area",
+    "lat": 17.4015,
+    "lng": 78.5590,
+    "radius": 600,
+    "lightingLevel": 0.2,
+    "description": "Industrial zone with minimal lighting during night shifts."
+  },
+  {
+    "id": 6,
+    "name": "Chandrayangutta Outskirts",
+    "lat": 17.3310,
+    "lng": 78.4890,
+    "radius": 550,
+    "lightingLevel": 0.1,
+    "description": "Peripheral area with very poor infrastructure and lighting. Gang violence reported."
+  },
+  {
+    "id": 7,
+    "name": "IS Sadan - Necklace Road Stretch",
+    "lat": 17.4100,
+    "lng": 78.4730,
+    "radius": 300,
+    "lightingLevel": 0.35,
+    "description": "Some sections near the lake have dim lighting patches."
+  },
+  {
+    "id": 8,
+    "name": "Malkajgiri Railway Colony",
+    "lat": 17.4548,
+    "lng": 78.5072,
+    "radius": 400,
+    "lightingLevel": 0.25,
+    "description": "Old railway colony lanes with sparse and aging street lights."
+  },
+  {
+    "id": 9,
+    "name": "Bowenpally Market Backside",
+    "lat": 17.4612,
+    "lng": 78.4799,
+    "radius": 350,
+    "lightingLevel": 0.3,
+    "description": "Rear side of the wholesale market is poorly illuminated."
+  },
+  {
+    "id": 10,
+    "name": "Habsiguda Colony Interior",
+    "lat": 17.4142,
+    "lng": 78.5389,
+    "radius": 300,
+    "lightingLevel": 0.3,
+    "description": "Internal colony roads have intermittent lighting coverage."
+  },
+  {
+    "id": 11,
+    "name": "Moosapet Bridge Area",
+    "lat": 17.4680,
+    "lng": 78.4230,
+    "radius": 400,
+    "lightingLevel": 0.2,
+    "description": "Under-bridge areas are extremely dark and poorly maintained."
+  },
+  {
+    "id": 12,
+    "name": "Rajendranagar Forest Road",
+    "lat": 17.3260,
+    "lng": 78.4440,
+    "radius": 700,
+    "lightingLevel": 0.1,
+    "description": "Forest-adjacent road with zero artificial lighting."
+  },
+  {
+    "id": 13,
+    "name": "Narsingi Construction Corridor",
+    "lat": 17.3880,
+    "lng": 78.3520,
+    "radius": 600,
+    "lightingLevel": 0.15,
+    "description": "Rapid construction zone with temporary roads and no permanent street lighting. IT corridor expansion area."
+  },
+  {
+    "id": 14,
+    "name": "Gachibowli Back Roads",
+    "lat": 17.4350,
+    "lng": 78.3400,
+    "radius": 450,
+    "lightingLevel": 0.2,
+    "description": "Service roads behind IT parks with incomplete lighting infrastructure despite high case volume."
+  },
+  {
+    "id": 15,
+    "name": "Raidurgam Under-Construction Zone",
+    "lat": 17.4250,
+    "lng": 78.3750,
+    "radius": 500,
+    "lightingLevel": 0.18,
+    "description": "Financial District expansion zone with large unlit patches between high-rises."
+  },
+  {
+    "id": 16,
+    "name": "ORR Stretch — Shamshabad",
+    "lat": 17.2900,
+    "lng": 78.4200,
+    "radius": 800,
+    "lightingLevel": 0.12,
+    "description": "Outer Ring Road stretch near airport with minimal lighting. Accident-prone zone — ORR fatalities doubled in 2025."
+  },
+  {
+    "id": 17,
+    "name": "ORR Stretch — Ghatkesar",
+    "lat": 17.4500,
+    "lng": 78.6200,
+    "radius": 750,
+    "lightingLevel": 0.1,
+    "description": "High-speed ORR segment with near-zero lighting in semi-rural stretch. Multiple fatalities recorded."
+  },
+  {
+    "id": 18,
+    "name": "Vanasthalipuram Dark Pockets",
+    "lat": 17.3300,
+    "lng": 78.5500,
+    "radius": 400,
+    "lightingLevel": 0.2,
+    "description": "Residential interior pockets with poor civic infrastructure. Area of a major domestic homicide in 2025."
+  },
+  {
+    "id": 19,
+    "name": "Ghouse Nagar Interior",
+    "lat": 17.3100,
+    "lng": 78.4680,
+    "radius": 350,
+    "lightingLevel": 0.15,
+    "description": "Narrow interior lanes in gang activity zone. Site of Chandrayangutta retaliation killing."
+  },
+  {
+    "id": 20,
+    "name": "Falaknuma Heritage Zone",
+    "lat": 17.3320,
+    "lng": 78.4620,
+    "radius": 500,
+    "lightingLevel": 0.2,
+    "description": "Historic area surrounding Falaknuma Palace with aging infrastructure and minimal modern lighting."
+  }
+]

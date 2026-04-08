@@ -1,0 +1,206 @@
+{
+  "source": "Hyderabad City Police Annual Reports 2024-2025, NCRB, Telangana State Police",
+  "city": "Hyderabad",
+  "year": 2025,
+
+  "overall_crime": {
+    "total_cases_2024": 35944,
+    "total_cases_2025": 30690,
+    "percentage_change": -15,
+    "cases_per_day_2024": 98,
+    "cases_per_day_2025": 84,
+    "crime_rate_per_lakh_2023": 266.7,
+    "national_metro_average_2023": 544
+  },
+
+  "categories": {
+    "bodily_offences": {
+      "total_2024": 8447,
+      "total_2025": 7064,
+      "percentage_change": -16
+    },
+    "grave_bodily_offences": {
+      "total_2024": 700,
+      "total_2025": 672,
+      "percentage_change": -4
+    },
+    "non_grave_bodily_offences": {
+      "total_2024": 7747,
+      "total_2025": 6392,
+      "percentage_change": -17
+    },
+    "property_offences": {
+      "total_2024": 5328,
+      "total_2025": 3817,
+      "percentage_change": -28
+    },
+    "grave_property_offences": {
+      "total_2024": 315,
+      "total_2025": 217,
+      "percentage_change": -31
+    },
+    "non_grave_property_offences": {
+      "total_2024": 5013,
+      "total_2025": 3600,
+      "percentage_change": -28
+    }
+  },
+
+  "detailed_crimes": [
+    {
+      "crime_type": "Murder",
+      "cases_2024": 77,
+      "cases_2025": 69,
+      "percentage_change": -10,
+      "severity_weight": 10
+    },
+    {
+      "crime_type": "Attempt to Murder",
+      "cases_2024": 214,
+      "cases_2025": 176,
+      "percentage_change": -18,
+      "severity_weight": 9
+    },
+    {
+      "crime_type": "Robbery",
+      "cases_2024": 219,
+      "cases_2025": 116,
+      "percentage_change": -47,
+      "severity_weight": 8
+    },
+    {
+      "crime_type": "Armed Robbery",
+      "cases_2024": 34,
+      "cases_2025": 28,
+      "percentage_change": -18,
+      "severity_weight": 9
+    },
+    {
+      "crime_type": "House Breaking",
+      "cases_2024": 435,
+      "cases_2025": 464,
+      "percentage_change": 7,
+      "severity_weight": 6
+    },
+    {
+      "crime_type": "Automobile Theft",
+      "cases_2024": 2091,
+      "cases_2025": 1501,
+      "percentage_change": -28,
+      "severity_weight": 5
+    },
+    {
+      "crime_type": "Chain Snatching",
+      "cases_2024": 180,
+      "cases_2025": 145,
+      "percentage_change": -19,
+      "severity_weight": 6
+    },
+    {
+      "crime_type": "Rape",
+      "cases_2024": 584,
+      "cases_2025": 405,
+      "percentage_change": -31,
+      "severity_weight": 10
+    },
+    {
+      "crime_type": "Kidnapping",
+      "cases_2024": 324,
+      "cases_2025": 166,
+      "percentage_change": -49,
+      "severity_weight": 9
+    },
+    {
+      "crime_type": "Crime Against Women",
+      "cases_2024": 2482,
+      "cases_2025": 2625,
+      "percentage_change": 6,
+      "severity_weight": 9
+    },
+    {
+      "crime_type": "POCSO Offences",
+      "cases_2024": 310,
+      "cases_2025": 365,
+      "percentage_change": 18,
+      "severity_weight": 10
+    },
+    {
+      "crime_type": "Cybercrime",
+      "cases_2024": 4042,
+      "cases_2025": 3735,
+      "percentage_change": -8,
+      "severity_weight": 4
+    },
+    {
+      "crime_type": "NDPS / Narcotics",
+      "cases_2024": 148,
+      "cases_2025": 175,
+      "percentage_change": 18,
+      "severity_weight": 7
+    },
+    {
+      "crime_type": "Extortion",
+      "cases_2024": 95,
+      "cases_2025": 82,
+      "percentage_change": -14,
+      "severity_weight": 7
+    },
+    {
+      "crime_type": "Domestic Violence",
+      "cases_2024": 1200,
+      "cases_2025": 1350,
+      "percentage_change": 13,
+      "severity_weight": 8
+    }
+  ],
+
+  "cybercrime_deep_dive": {
+    "total_cases_2024": 4042,
+    "total_cases_2025": 3735,
+    "financial_loss_2024_crore": 296.32,
+    "financial_loss_2025_cyberabad_crore": 404.61,
+    "recovery_2024_crore": 39.3,
+    "recovery_rate_percent": 13,
+    "top_typologies": [
+      { "type": "OTP / Phishing", "cases": 3000, "trend": "declining" },
+      { "type": "Part-Time Job Scams", "cases": 2500, "trend": "rising" },
+      { "type": "Investment Fraud", "cases": 2000, "loss_crore": 200, "trend": "rising" },
+      { "type": "Digital Arrests", "cases": 1119, "loss_crore": 15, "trend": "new" }
+    ],
+    "national_rank": "2nd (after Karnataka)"
+  },
+
+  "women_safety": {
+    "crimes_against_women_2025": 2625,
+    "percentage_change": 6,
+    "pocso_2025": 365,
+    "pocso_change": 18,
+    "she_teams_active": 30,
+    "key_trend": "Persistent double-digit increase despite expanded SHE Teams mandate"
+  },
+
+  "narcotics_enforcement": {
+    "arrests_2024": 315,
+    "cases_2024": 148,
+    "cases_2025": 175,
+    "trend": "Rising due to increased enforcement and detection"
+  },
+
+  "traffic_enforcement": {
+    "drunk_driving_cases_2024": 52000,
+    "minor_driving_cases_2025": 7808,
+    "registrations_cancelled": 1455,
+    "orr_fatalities_2024": 31,
+    "orr_fatalities_2025": 80,
+    "key_trend": "ORR fatalities more than doubled; aggressive digitized enforcement"
+  },
+
+  "property_crime_statistics": {
+    "cases_reported": 3817,
+    "cases_detected": 2051,
+    "detection_rate_percent": 54,
+    "property_recovered_crore": 22.30,
+    "property_lost_crore": 36.74,
+    "recovery_rate_percent": 61
+  }
+}

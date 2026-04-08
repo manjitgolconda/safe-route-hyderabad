@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="SafeRoute Hyderabad — Smart safety-aware navigation system that suggests the safest routes across Hyderabad city.">
+    <title>SafeRoute Hyderabad — Smart Safe Navigation</title>
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#09090b">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="SafeRoute">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+    <!-- Google Fonts — Clean professional typefaces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons (lightweight SVG icon library) -->
+    <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.min.js"></script>
+
+    <!-- Leaflet Core -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- App Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== DESKTOP SIDEBAR / MOBILE BOTTOM SHEET ===== -->
+    <aside id="sidebar">
+        <!-- Brand Header -->
+        <div class="brand">
+            <div class="brand-logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#brandGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <defs><linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs>
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+            </div>
+            <div class="brand-text">
+                <h1 class="brand-title">SafeRoute</h1>
+                <span class="brand-sub">Hyderabad Navigation</span>
+            </div>
+            <span class="ai-badge">AI Powered</span>
+        </div>
+
+        <!-- Mobile Drag Handle -->
+        <div class="sheet-handle" id="sheet-handle">
+            <div class="sheet-handle-bar"></div>
+        </div>
+
+        <div class="sidebar-scroll">
+            <!-- Route Planner -->
+            <section class="panel tab-content" id="location-panel" data-tab="route">
+                <div class="panel-header">
+                    <i data-lucide="navigation" class="panel-icon"></i>
+                    <h2 class="panel-title">Route Planner</h2>
+                </div>
+                <div class="input-group">
+                    <label for="start-input">Origin</label>
+                    <div class="input-row">
+                        <input type="text" id="start-input" placeholder="Click map or type address…" autocomplete="off">
+                        <button id="btn-my-location" class="btn-icon" title="Use my current location">
+                            <i data-lucide="locate-fixed"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="end-input">Destination</label>
+                    <input type="text" id="end-input" placeholder="Click map or type address…" autocomplete="off">
+                </div>
+                <div class="btn-row">
+                    <button id="btn-find-route" class="btn-primary">
+                        <i data-lucide="route"></i>
+                        <span>Find Routes</span>
+                    </button>
+                    <button id="btn-clear" class="btn-secondary">
+                        <i data-lucide="x"></i>
+                        <span>Clear</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Route Comparison Panel -->
+            <section class="panel tab-content" id="route-panel" data-tab="route" style="display:none;">
+                <div class="panel-header">
+                    <i data-lucide="bar-chart-3" class="panel-icon"></i>
+                    <h2 class="panel-title">Route Comparison</h2>
+                </div>
+                <div class="route-cards">
+                    <!-- Shortest Route Card -->
+                    <div class="route-card shortest">
+                        <div class="route-card-header">
+                            <span class="route-indicator cyan"></span>
+                            <h3>Shortest Route</h3>
+                        </div>
+                        <div class="route-stats">
+                            <div class="stat">
+                                <span class="stat-label">Distance</span>
+                                <span class="stat-value" id="shortest-distance">—</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Est. Time</span>
+                                <span class="stat-value" id="shortest-time">—</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Safety</span>
+                                <span class="stat-value" id="shortest-safety">—</span>
+                            </div>
+                        </div>
+                        <div class="ai-risk-row" id="shortest-ai-risk" style="display:none;">
+                            <span class="ai-risk-label">AI Risk</span>
+                            <span class="ai-risk-badge" id="shortest-risk-badge">—</span>
+                            <span class="ai-risk-tag">Experimental</span>
+                        </div>
+                    </div>
+                    <!-- Safest Route Card -->
+                    <div class="route-card safest">
+                        <div class="route-card-header">
+                            <span class="route-indicator green"></span>
+                            <h3>Safest Route</h3>
+                        </div>
+                        <div class="route-stats">
+                            <div class="stat">
+                                <span class="stat-label">Distance</span>
+                                <span class="stat-value" id="safest-distance">—</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Est. Time</span>
+                                <span class="stat-value" id="safest-time">—</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Safety</span>
+                                <span class="stat-value" id="safest-safety">—</span>
+                            </div>
+                        </div>
+                        <div class="ai-risk-row" id="safest-ai-risk" style="display:none;">
+                            <span class="ai-risk-label">AI Risk</span>
+                            <span class="ai-risk-badge" id="safest-risk-badge">—</span>
+                            <span class="ai-risk-tag">Experimental</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risk Meter Component -->
+                <div class="risk-meter" id="risk-meter" style="display:none;">
+                    <div class="risk-meter-header">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <span>Route Safety Score</span>
+                    </div>
+                    <div class="risk-meter-body">
+                        <div class="risk-score-circle" id="risk-score-circle">
+                            <span class="risk-score-value" id="risk-score-value">—</span>
+                            <span class="risk-score-max">/100</span>
+                        </div>
+                        <div class="risk-meter-bar-container">
+                            <div class="risk-meter-track">
+                                <div class="risk-meter-fill" id="risk-meter-fill" style="width:0%;"></div>
+                            </div>
+                            <span class="risk-meter-label" id="risk-meter-label">—</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Layer Controls -->
+            <section class="panel tab-content" id="layers-panel" data-tab="route">
+                <div class="panel-header">
+                    <i data-lucide="layers" class="panel-icon"></i>
+                    <h2 class="panel-title">Safety Layers</h2>
+                </div>
+                <label class="toggle-row">
+                    <div class="toggle-label">
+                        <span class="toggle-dot dot-red"></span>
+                        <span>Crime Heatmap</span>
+                    </div>
+                    <input type="checkbox" id="toggle-crime" checked>
+                    <span class="toggle-switch"></span>
+                </label>
+                <label class="toggle-row">
+                    <div class="toggle-label">
+                        <span class="toggle-dot dot-amber"></span>
+                        <span>Low-Light Zones</span>
+                    </div>
+                    <input type="checkbox" id="toggle-lighting" checked>
+                    <span class="toggle-switch"></span>
+                </label>
+                <label class="toggle-row">
+                    <div class="toggle-label">
+                        <span class="toggle-dot dot-green"></span>
+                        <span>Police Stations</span>
+                    </div>
+                    <input type="checkbox" id="toggle-police" checked>
+                    <span class="toggle-switch"></span>
+                </label>
+            </section>
+
+            <!-- Safety Analytics -->
+            <section class="panel tab-content" id="analytics-panel" data-tab="analytics">
+                <div class="panel-header">
+                    <i data-lucide="shield-check" class="panel-icon"></i>
+                    <h2 class="panel-title">Safety Overview</h2>
+                </div>
+                <div class="analytics-grid">
+                    <div class="analytic-card">
+                        <span class="analytic-value" id="stat-crime-zones">0</span>
+                        <span class="analytic-label">Crime Zones</span>
+                    </div>
+                    <div class="analytic-card">
+                        <span class="analytic-value" id="stat-dark-areas">0</span>
+                        <span class="analytic-label">Dark Areas</span>
+                    </div>
+                    <div class="analytic-card">
+                        <span class="analytic-value" id="stat-police">0</span>
+                        <span class="analytic-label">Stations</span>
+                    </div>
+                    <div class="analytic-card">
+                        <span class="analytic-value" id="stat-reports">0</span>
+                        <span class="analytic-label">Reports</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Crime Analytics Dashboard -->
+            <section class="panel tab-content" id="crime-analytics-panel" data-tab="analytics">
+                <div class="panel-header">
+                    <i data-lucide="activity" class="panel-icon"></i>
+                    <h2 class="panel-title">Crime Analytics</h2>
+                    <span class="panel-badge">2025</span>
+                </div>
+
+                <!-- Year-over-Year Overview -->
+                <div class="crime-yoy">
+                    <div class="yoy-row">
+                        <span class="yoy-label">Total Cases</span>
+                        <div class="yoy-values">
+                            <span class="yoy-old" id="ca-total-2024">—</span>
+                            <svg class="yoy-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                            <span class="yoy-new" id="ca-total-2025">—</span>
+                        </div>
+                    </div>
+                    <span class="change-pill down" id="ca-change-pill">—</span>
+                </div>
+
+                <!-- Crime Breakdown -->
+                <div class="crime-breakdown" id="crime-breakdown">
+                    <!-- Dynamically populated by JS -->
+                </div>
+
+                <!-- Property Recovery Stats -->
+                <div class="recovery-stats">
+                    <div class="recovery-stat">
+                        <span class="recovery-value" id="ca-detection-rate">—</span>
+                        <span class="recovery-label">Detection Rate</span>
+                    </div>
+                    <div class="recovery-stat">
+                        <span class="recovery-value" id="ca-recovery-rate">—</span>
+                        <span class="recovery-label">Recovery Rate</span>
+                    </div>
+                    <div class="recovery-stat">
+                        <span class="recovery-value" id="ca-property-recovered">—</span>
+                        <span class="recovery-label">Recovered (₹Cr)</span>
+                    </div>
+                </div>
+
+                <div class="data-source">Source: Hyderabad City Police Annual Report 2025</div>
+            </section>
+
+            <!-- ===== CRIME TRENDS PANEL ===== -->
+            <section class="panel tab-content" id="crime-trends-panel" data-tab="analytics">
+                <div class="panel-header">
+                    <i data-lucide="trending-up" class="panel-icon"></i>
+                    <h2 class="panel-title">Crime Trends</h2>
+                    <span class="panel-badge">2021–26</span>
+                </div>
+                <div class="trend-subtitle">Total IPC Cases by Year</div>
+                <div class="trend-chart" id="trend-chart">
+                    <!-- Dynamically populated by JS -->
+                </div>
+                <div class="trend-insight" id="trend-insight"></div>
+                <div class="trend-comparison">
+                    <div class="trend-compare-item">
+                        <span class="compare-label">Hyderabad Rate</span>
+                        <span class="compare-value" id="hyd-crime-rate">—</span>
+                        <span class="compare-unit">per lakh</span>
+                    </div>
+                    <div class="trend-compare-divider"></div>
+                    <div class="trend-compare-item">
+                        <span class="compare-label">National Avg</span>
+                        <span class="compare-value warn" id="nat-crime-rate">—</span>
+                        <span class="compare-unit">per lakh</span>
+                    </div>
+                </div>
+                <div class="data-source">Source: NCRB & City Police Reports</div>
+
+                <!-- AI Forecast Sub-Section -->
+                <div class="ai-forecast" id="ai-forecast">
+                    <div class="ai-forecast-header">
+                        <span class="ai-forecast-title">AI Forecast</span>
+                        <span class="ai-risk-tag">Experimental</span>
+                    </div>
+                    <div class="ai-forecast-body">
+                        <div class="forecast-main">
+                            <span class="forecast-year" id="forecast-year">—</span>
+                            <span class="forecast-value" id="forecast-value">—</span>
+                            <span class="forecast-change" id="forecast-change">—</span>
+                        </div>
+                        <div class="forecast-confidence">
+                            <span class="forecast-conf-label">Confidence</span>
+                            <div class="forecast-conf-track">
+                                <div class="forecast-conf-fill" id="forecast-conf-fill" style="width:0%;"></div>
+                            </div>
+                            <span class="forecast-conf-val" id="forecast-conf-val">—</span>
+                        </div>
+                    </div>
+                    <div class="ai-anomalies" id="ai-anomalies">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== COMMISSIONERATE COMPARISON ===== -->
+            <section class="panel tab-content" id="commissionerate-panel" data-tab="analytics">
+                <div class="panel-header">
+                    <i data-lucide="building-2" class="panel-icon"></i>
+                    <h2 class="panel-title">Commissionerates</h2>
+                </div>
+                <div class="comm-cards" id="comm-cards">
+                    <!-- Dynamically populated by JS -->
+                </div>
+            </section>
+
+            <!-- ===== TOP HOTSPOTS ===== -->
+            <section class="panel tab-content" id="hotspots-panel" data-tab="analytics">
+                <div class="panel-header">
+                    <i data-lucide="flame" class="panel-icon"></i>
+                    <h2 class="panel-title">Top Hotspots</h2>
+                    <span class="panel-badge">2024–25</span>
+                </div>
+                <div class="hotspot-list" id="hotspot-list">
+                    <!-- Dynamically populated by JS -->
+                </div>
+            </section>
+
+            <!-- ===== CYBERCRIME IMPACT ===== -->
+            <section class="panel tab-content" id="cybercrime-panel" data-tab="analytics">
+                <div class="panel-header">
+                    <i data-lucide="wifi-off" class="panel-icon"></i>
+                    <h2 class="panel-title">Cybercrime Impact</h2>
+                </div>
+                <div class="cyber-stats">
+                    <div class="cyber-stat-big">
+                        <span class="cyber-stat-value" id="cyber-loss">—</span>
+                        <span class="cyber-stat-label">Total Financial Loss (2024)</span>
+                    </div>
+                    <div class="cyber-stat-row">
+                        <div class="cyber-stat-item">
+                            <span class="cyber-mini-value" id="cyber-cases">—</span>
+                            <span class="cyber-mini-label">Cases</span>
+                        </div>
+                        <div class="cyber-stat-item">
+                            <span class="cyber-mini-value warn" id="cyber-recovery">—</span>
+                            <span class="cyber-mini-label">Recovered</span>
+                        </div>
+                        <div class="cyber-stat-item">
+                            <span class="cyber-mini-value" id="cyber-rank">—</span>
+                            <span class="cyber-mini-label">National Rank</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cyber-typology" id="cyber-typology">
+                    <!-- Dynamically populated by JS -->
+                </div>
+                <div class="data-source">Source: Hyderabad & Cyberabad Police Reports</div>
+            </section>
+
+            <!-- ===== HIGH-SEVERITY INCIDENTS ===== -->
+            <section class="panel tab-content" id="incidents-panel" data-tab="analytics">
+                <div class="panel-header">
+                    <i data-lucide="siren" class="panel-icon"></i>
+                    <h2 class="panel-title">Notable Incidents</h2>
+                </div>
+                <div class="incident-timeline" id="incident-timeline">
+                    <!-- Dynamically populated by JS -->
+                </div>
+            </section>
+
+            <!-- ===== LAW ENFORCEMENT ===== -->
+            <section class="panel tab-content" id="law-enforcement-panel" data-tab="safety">
+                <div class="panel-header">
+                    <i data-lucide="shield" class="panel-icon"></i>
+                    <h2 class="panel-title">Law Enforcement</h2>
+                </div>
+                <div class="enforcement-stats" id="enforcement-stats">
+                    <!-- Dynamically populated by JS -->
+                </div>
+                <label class="toggle-row">
+                    <div class="toggle-label">
+                        <span class="toggle-dot dot-blue"></span>
+                        <span>Specialized Units</span>
+                    </div>
+                    <input type="checkbox" id="toggle-units">
+                    <span class="toggle-switch"></span>
+                </label>
+                <label class="toggle-row">
+                    <div class="toggle-label">
+                        <span class="toggle-dot dot-orange"></span>
+                        <span>Hotspot Zones</span>
+                    </div>
+                    <input type="checkbox" id="toggle-hotspots">
+                    <span class="toggle-switch"></span>
+                </label>
+            </section>
+
+            <!-- ===== PERSONALIZED SAFETY MODE ===== -->
+            <section class="panel tab-content" id="safety-modes-panel" data-tab="safety">
+                <div class="panel-header">
+                    <i data-lucide="user-check" class="panel-icon"></i>
+                    <h2 class="panel-title">Safety Modes</h2>
+                    <span class="ai-risk-tag">AI</span>
+                </div>
+                <p class="panel-hint">Adjust route scoring based on your safety priorities.</p>
+                <label class="toggle-row">
+                    <div class="toggle-label">
+                        <span class="toggle-dot" style="background:#ec4899;"></span>
+                        <span>Women Safety Priority</span>
+                    </div>
+                    <input type="checkbox" id="mode-women-safety">
+                    <span class="toggle-switch"></span>
+                </label>
+                <label class="toggle-row">
+                    <div class="toggle-label">
+                        <span class="toggle-dot dot-amber"></span>
+                        <span>Avoid Poorly Lit Areas</span>
+                    </div>
+                    <input type="checkbox" id="mode-avoid-dark">
+                    <span class="toggle-switch"></span>
+                </label>
+                <label class="toggle-row">
+                    <div class="toggle-label">
+                        <span class="toggle-dot dot-red"></span>
+                        <span>Avoid Property Crime Zones</span>
+                    </div>
+                    <input type="checkbox" id="mode-avoid-property">
+                    <span class="toggle-switch"></span>
+                </label>
+                <label class="toggle-row">
+                    <div class="toggle-label">
+                        <span class="toggle-dot dot-blue"></span>
+                        <span>Avoid Cybercrime Hotspots</span>
+                    </div>
+                    <input type="checkbox" id="mode-avoid-cyber">
+                    <span class="toggle-switch"></span>
+                </label>
+            </section>
+
+            <!-- Report Button -->
+            <section class="panel panel-flat tab-content" data-tab="safety">
+                <button id="btn-report" class="btn-danger">
+                    <i data-lucide="alert-triangle"></i>
+                    <span>Report Unsafe Area</span>
+                </button>
+            </section>
+        </div>
+
+        <!-- Mobile toggle (desktop only now) -->
+        <button id="sidebar-toggle" title="Toggle sidebar">
+            <i data-lucide="menu"></i>
+        </button>
+    </aside>
+
+    <!-- ===== MAP CONTAINER ===== -->
+    <div id="map"></div>
+
+    <!-- ===== CRIME HEATMAP LEGEND ===== -->
+    <div class="heatmap-legend" id="heatmap-legend">
+        <div class="legend-title">Crime Severity</div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#fee2e2;"></span>
+            <span class="legend-label">Very Low</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#ffcccc;"></span>
+            <span class="legend-label">Low Crime</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#ff6666;"></span>
+            <span class="legend-label">Moderate</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#cc0000;"></span>
+            <span class="legend-label">High Crime</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#991b1b;"></span>
+            <span class="legend-label">Serious</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background:#450a0a;"></span>
+            <span class="legend-label">Most Severe</span>
+        </div>
+    </div>
+
+    <!-- ===== FAB — Report Unsafe (Mobile) ===== -->
+    <button class="fab" id="fab-report" title="Report Unsafe Area">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+    </button>
+
+    <!-- ===== REPORT MODAL ===== -->
+    <div class="modal-overlay" id="report-modal" style="display:none;">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Report Unsafe Area</h2>
+                <button id="btn-close-modal" class="btn-modal-close"><i data-lucide="x"></i></button>
+            </div>
+            <p class="modal-hint">Click on the map to select the location, then fill in the details below.</p>
+            <div class="input-group">
+                <label for="report-lat">Latitude</label>
+                <input type="text" id="report-lat" readonly placeholder="Click on map…">
+            </div>
+            <div class="input-group">
+                <label for="report-lng">Longitude</label>
+                <input type="text" id="report-lng" readonly placeholder="Click on map…">
+            </div>
+            <div class="input-group">
+                <label for="report-type">Incident Type</label>
+                <select id="report-type">
+                    <option value="theft">Theft / Snatching</option>
+                    <option value="assault">Assault</option>
+                    <option value="harassment">Harassment</option>
+                    <option value="poor_lighting">Poor Lighting</option>
+                    <option value="accident">Accident Prone</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="report-desc">Description</label>
+                <textarea id="report-desc" rows="3" placeholder="Describe the incident or safety concern…"></textarea>
+            </div>
+            <div class="btn-row">
+                <button id="btn-submit-report" class="btn-primary">
+                    <i data-lucide="send"></i>
+                    <span>Submit Report</span>
+                </button>
+                <button id="btn-cancel-report" class="btn-secondary">
+                    <span>Cancel</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== AI CHAT — MOBILE FULL-SCREEN / DESKTOP FLOATING ===== -->
+    <div class="ai-chat" id="ai-chat">
+        <div class="ai-chat-header" id="ai-chat-toggle">
+            <div class="ai-chat-header-left">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="m2 14 6-6 6 6"/><path d="M9 13h6"/></svg>
+                <span>AI Assistant</span>
+                <span class="ai-risk-tag">Experimental</span>
+            </div>
+            <svg class="ai-chat-chevron" id="ai-chat-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+        </div>
+        <div class="ai-chat-body" id="ai-chat-body">
+            <div class="ai-chat-messages" id="ai-chat-messages">
+                <div class="ai-msg bot">
+                    <div class="ai-msg-text">👋 Hi! I'm the SafeRoute AI Assistant. Ask me about area safety, crime stats, or trends.
+
+Type <b>help</b> for all commands.</div>
+                </div>
+            </div>
+            <div class="ai-chat-input-row">
+                <input type="text" id="ai-chat-input" placeholder="Ask about safety…" autocomplete="off">
+                <button id="ai-chat-send" class="ai-chat-send-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MOBILE BOTTOM NAVIGATION ===== -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <button class="nav-item active" data-tab="map" id="nav-map">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            <span>Map</span>
+        </button>
+        <button class="nav-item" data-tab="route" id="nav-route">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>
+            <span>Route</span>
+        </button>
+        <button class="nav-item" data-tab="analytics" id="nav-analytics">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <span>Analytics</span>
+        </button>
+        <button class="nav-item" data-tab="safety" id="nav-safety">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Safety</span>
+        </button>
+    </nav>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+    <script src="ai-engine.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('[PWA] Service Worker registered:', reg.scope))
+                    .catch(err => console.warn('[PWA] SW registration failed:', err));
+            });
+        }
+    </script>
+</body>
+</html>

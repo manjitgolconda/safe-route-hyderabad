@@ -1,0 +1,66 @@
+{
+  "version": "2.0",
+  "source": "Hyderabad City Police Annual Reports 2024-2025, NCRB Data",
+
+  "weights": {
+    "murder":              10,
+    "attempt_to_murder":    9,
+    "robbery":              8,
+    "armed_robbery":        9,
+    "house_breaking":       6,
+    "automobile_theft":     5,
+    "chain_snatching":      6,
+    "rape":                10,
+    "kidnapping":           9,
+    "crime_against_women":  9,
+    "pocso":               10,
+    "domestic_violence":    8,
+    "gang_violence":       10,
+    "cybercrime":           4,
+    "cyber_fraud":          4,
+    "digital_arrest":       5,
+    "ndps_narcotics":       7,
+    "extortion":            7,
+    "theft":                5,
+    "major_theft":          6,
+    "minor_theft":          3,
+    "assault":              7,
+    "harassment":           6,
+    "accident":             4,
+    "vehicle_theft":        5,
+    "poor_lighting":        3,
+    "sexual_assault":      10,
+    "property":             4,
+    "nuisance":             2,
+    "protest":              2,
+    "animal":               2,
+    "multiple":             5,
+    "admin":                1,
+    "prevention":           1
+  },
+
+  "risk_bands": [
+    { "min": 0,  "max": 3,  "label": "Low",       "color": "#22c55e" },
+    { "min": 4,  "max": 6,  "label": "Moderate",   "color": "#f59e0b" },
+    { "min": 7,  "max": 8,  "label": "High",       "color": "#ef4444" },
+    { "min": 9,  "max": 10, "label": "Very High",   "color": "#991b1b" }
+  ],
+
+  "formulas": {
+    "risk_score": "cases_2025 * severity_weight",
+    "heatmap_intensity": "(severity_weight * cases_2025) / max_cases",
+    "safety_penalty": "(severity / 10) * proximity_factor * weight_multiplier"
+  },
+
+  "severity_explanation": {
+    "10": "Life-threatening / irreversible harm (murder, rape, POCSO, gang violence)",
+    "9":  "Severe bodily harm / high trauma (armed robbery, kidnapping, attempt to murder)",
+    "8":  "Serious harm / organized crime (robbery, domestic violence)",
+    "7":  "Significant threat / social harm (assault, narcotics, extortion)",
+    "6":  "Property violation / area unsafe (house breaking, chain snatching)",
+    "5":  "Targeted theft (auto theft, digital scams)",
+    "4":  "Economic/digital crime (cybercrime, accidents)",
+    "3":  "Minor risk (petty theft, poor lighting)",
+    "1-2": "Administrative / minimal direct threat"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "source": "NCRB & Hyderabad City Police Annual Reports (2021-2026)",
+  "description": "Longitudinal crime trends across Greater Hyderabad metropolitan area",
+
+  "annual_totals": [
+    {
+      "year": 2021,
+      "total_ipc_cases": 17951,
+      "cases_per_day": 49,
+      "crime_rate_per_lakh": 220.3,
+      "annotation": "Post-pandemic normalization begins"
+    },
+    {
+      "year": 2022,
+      "total_ipc_cases": 20668,
+      "cases_per_day": 57,
+      "crime_rate_per_lakh": 241.8,
+      "annotation": "Steady upward normalization"
+    },
+    {
+      "year": 2023,
+      "total_ipc_cases": 25488,
+      "cases_per_day": 59,
+      "crime_rate_per_lakh": 266.7,
+      "annotation": "e-FIR platforms & women's help desks expand"
+    },
+    {
+      "year": 2024,
+      "total_ipc_cases": 35944,
+      "cases_per_day": 98,
+      "crime_rate_per_lakh": 372.1,
+      "annotation": "Free FIR policy — 41% administrative spike"
+    },
+    {
+      "year": 2025,
+      "total_ipc_cases": 30690,
+      "cases_per_day": 84,
+      "crime_rate_per_lakh": 310.5,
+      "annotation": "15% correction — spatial displacement to fringes"
+    },
+    {
+      "year": 2026,
+      "total_ipc_cases": 3980,
+      "cases_per_day": 71,
+      "crime_rate_per_lakh": null,
+      "annotation": "YTD (Jan-Feb 2026)"
+    }
+  ],
+
+  "national_comparison": {
+    "hyderabad_rate_2023": 266.7,
+    "national_metro_average_2023": 544,
+    "telangana_share_of_national_crime_2023": 2.9,
+    "hyderabad_share_of_metro_crime_2023": 2.7
+  },
+
+  "commissionerate_trends": {
+    "hyderabad": {
+      "name": "Hyderabad City",
+      "cases_2024": 35944,
+      "cases_2025": 30690,
+      "change_percent": -15,
+      "bodily_offences_2024": 8447,
+      "bodily_offences_2025": 7064,
+      "property_offences_2024": 5328,
+      "property_offences_2025": 3817,
+      "key_insight": "Core city crackdown drove 15% drop; enhanced surveillance & visible policing"
+    },
+    "cyberabad": {
+      "name": "Cyberabad",
+      "cases_2024": 37689,
+      "cases_2025": 37243,
+      "change_percent": -1.18,
+      "cybercrime_share_2024": 32,
+      "cybercrime_share_2025": 21,
+      "key_insight": "Highly stable; marginal 1.18% drop; cybercrime reduced from 32% to 21% of total"
+    },
+    "malkajgiri": {
+      "name": "Malkajgiri (formerly Rachakonda)",
+      "cases_2024": 28626,
+      "cases_2025": 33040,
+      "change_percent": 15.4,
+      "bodily_offences_2024": 22357,
+      "bodily_offences_2025": 27342,
+      "key_insight": "Crime displaced from core city to rapidly developing urban fringes; 15.4% increase"
+    }
+  },
+
+  "category_trends": {
+    "bodily_offences": {
+      "2023": 5098,
+      "2024": 8447,
+      "2025": 7064,
+      "change_2023_2024": 65.74,
+      "change_2024_2025": -16
+    },
+    "property_offences": {
+      "2023": 3551,
+      "2024": 5328,
+      "2025": 3817,
+      "change_2023_2024": 50.04,
+      "change_2024_2025": -28
+    },
+    "cybercrime": {
+      "2023": 3200,
+      "2024": 4042,
+      "2025": 3735,
+      "change_2023_2024": 26.31,
+      "change_2024_2025": -8
+    }
+  },
+
+  "top_hotspot_stations": [
+    { "rank": 1, "station": "Gachibowli", "cases": 1562, "zone": "IT Corridor" },
+    { "rank": 2, "station": "Narsingi", "cases": 1515, "zone": "IT Corridor" },
+    { "rank": 3, "station": "Madhapur", "cases": 1360, "zone": "IT Corridor" },
+    { "rank": 4, "station": "Uppal", "cases": 1350, "zone": "Eastern Ring" },
+    { "rank": 5, "station": "L.B. Nagar", "cases": 1100, "zone": "Southern Ring" },
+    { "rank": 6, "station": "Charminar", "cases": 980, "zone": "Old City" },
+    { "rank": 7, "station": "Sultanbazar", "cases": 890, "zone": "Central" },
+    { "rank": 8, "station": "Malkajgiri", "cases": 850, "zone": "North-East" },
+    { "rank": 9, "station": "Kukatpally", "cases": 820, "zone": "Western" },
+    { "rank": 10, "station": "Chandrayangutta", "cases": 780, "zone": "South-Old City" }
+  ]
+}

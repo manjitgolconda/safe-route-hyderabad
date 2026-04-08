@@ -1,0 +1,372 @@
+[
+  {
+    "id": 1,
+    "name": "Hyderabad City Police Commissionerate",
+    "lat": 17.3891,
+    "lng": 78.4714,
+    "address": "Purani Haveli, Nampally, Hyderabad",
+    "contact": "040-27852401",
+    "type": "commissionerate",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 2,
+    "name": "Abids Police Station",
+    "lat": 17.3923,
+    "lng": 78.4757,
+    "address": "Abids Road, Hyderabad",
+    "contact": "040-27854856",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 3,
+    "name": "Charminar Police Station",
+    "lat": 17.3604,
+    "lng": 78.4736,
+    "address": "Near Charminar, Old City",
+    "contact": "040-24521255",
+    "type": "station",
+    "commissionerate": "Hyderabad",
+    "case_volume": 980,
+    "hotspot_rank": 6
+  },
+  {
+    "id": 4,
+    "name": "Begumpet Police Station",
+    "lat": 17.4394,
+    "lng": 78.4650,
+    "address": "Sardar Patel Road, Begumpet",
+    "contact": "040-27853461",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 5,
+    "name": "Banjara Hills Police Station",
+    "lat": 17.4138,
+    "lng": 78.4403,
+    "address": "Road No. 12, Banjara Hills",
+    "contact": "040-23350424",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 6,
+    "name": "Jubilee Hills Police Station",
+    "lat": 17.4318,
+    "lng": 78.4105,
+    "address": "Road No. 36, Jubilee Hills",
+    "contact": "040-23543608",
+    "type": "station",
+    "commissionerate": "Cyberabad"
+  },
+  {
+    "id": 7,
+    "name": "Kukatpally Police Station",
+    "lat": 17.4932,
+    "lng": 78.3987,
+    "address": "KPHB Colony, Kukatpally",
+    "contact": "040-23054875",
+    "type": "station",
+    "commissionerate": "Cyberabad",
+    "case_volume": 820,
+    "hotspot_rank": 9
+  },
+  {
+    "id": 8,
+    "name": "Miyapur Police Station",
+    "lat": 17.4975,
+    "lng": 78.3565,
+    "address": "Miyapur X Roads, Miyapur",
+    "contact": "040-23056420",
+    "type": "station",
+    "commissionerate": "Cyberabad"
+  },
+  {
+    "id": 9,
+    "name": "Secunderabad Police Station",
+    "lat": 17.4399,
+    "lng": 78.4983,
+    "address": "MG Road, Secunderabad",
+    "contact": "040-27711811",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 10,
+    "name": "LB Nagar Police Station",
+    "lat": 17.3485,
+    "lng": 78.5515,
+    "address": "LB Nagar Circle, Rangareddy",
+    "contact": "040-24020567",
+    "type": "station",
+    "commissionerate": "Malkajgiri",
+    "case_volume": 1100,
+    "hotspot_rank": 5
+  },
+  {
+    "id": 11,
+    "name": "Madhapur Police Station",
+    "lat": 17.4483,
+    "lng": 78.3915,
+    "address": "Hitech City Road, Madhapur",
+    "contact": "040-23112206",
+    "type": "station",
+    "commissionerate": "Cyberabad",
+    "case_volume": 1360,
+    "hotspot_rank": 3
+  },
+  {
+    "id": 12,
+    "name": "Uppal Police Station",
+    "lat": 17.4005,
+    "lng": 78.5566,
+    "address": "Uppal Ring Road, Uppal",
+    "contact": "040-27201290",
+    "type": "station",
+    "commissionerate": "Malkajgiri",
+    "case_volume": 1350,
+    "hotspot_rank": 4
+  },
+  {
+    "id": 13,
+    "name": "Malakpet Police Station",
+    "lat": 17.3710,
+    "lng": 78.5015,
+    "address": "Old Malakpet Bridge, Malakpet",
+    "contact": "040-24571026",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 14,
+    "name": "Mehdipatnam Police Station",
+    "lat": 17.3955,
+    "lng": 78.4385,
+    "address": "Mehdipatnam Bus Depot, Mehdipatnam",
+    "contact": "040-23518976",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 15,
+    "name": "Falaknuma Police Station",
+    "lat": 17.3370,
+    "lng": 78.4670,
+    "address": "Falaknuma Road, Falaknuma",
+    "contact": "040-24524100",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 16,
+    "name": "Gachibowli Police Station",
+    "lat": 17.4400,
+    "lng": 78.3489,
+    "address": "Gachibowli Main Road, Near DLF",
+    "contact": "040-23001100",
+    "type": "station",
+    "commissionerate": "Cyberabad",
+    "case_volume": 1562,
+    "hotspot_rank": 1
+  },
+  {
+    "id": 17,
+    "name": "Narsingi Police Station",
+    "lat": 17.3900,
+    "lng": 78.3550,
+    "address": "Narsingi Main Road, Narsingi",
+    "contact": "040-23002200",
+    "type": "station",
+    "commissionerate": "Cyberabad",
+    "case_volume": 1515,
+    "hotspot_rank": 2
+  },
+  {
+    "id": 18,
+    "name": "Raidurgam Police Station",
+    "lat": 17.4192,
+    "lng": 78.3813,
+    "address": "Financial District Road, Raidurgam",
+    "contact": "040-23003300",
+    "type": "station",
+    "commissionerate": "Cyberabad"
+  },
+  {
+    "id": 19,
+    "name": "Kondapur Police Station",
+    "lat": 17.4600,
+    "lng": 78.3700,
+    "address": "Kondapur Main Road, Kondapur",
+    "contact": "040-23004400",
+    "type": "station",
+    "commissionerate": "Cyberabad"
+  },
+  {
+    "id": 20,
+    "name": "Sultanbazar Police Station",
+    "lat": 17.3846,
+    "lng": 78.4867,
+    "address": "Sultanbazar, Koti, Hyderabad",
+    "contact": "040-24652836",
+    "type": "station",
+    "commissionerate": "Hyderabad",
+    "case_volume": 890,
+    "hotspot_rank": 7
+  },
+  {
+    "id": 21,
+    "name": "Chandrayangutta Police Station",
+    "lat": 17.3200,
+    "lng": 78.4750,
+    "address": "Chandrayangutta Road, Hyderabad",
+    "contact": "040-24573200",
+    "type": "station",
+    "commissionerate": "Hyderabad",
+    "case_volume": 780,
+    "hotspot_rank": 10
+  },
+  {
+    "id": 22,
+    "name": "Hussainialam Police Station",
+    "lat": 17.3630,
+    "lng": 78.4700,
+    "address": "Hussainialam, Old City, Hyderabad",
+    "contact": "040-24520145",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 23,
+    "name": "Moghalpura Police Station",
+    "lat": 17.3550,
+    "lng": 78.4800,
+    "address": "Moghalpura, Old City, Hyderabad",
+    "contact": "040-24520346",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 24,
+    "name": "Malkajgiri Police Station",
+    "lat": 17.4496,
+    "lng": 78.5333,
+    "address": "Malkajgiri Main Road, Malkajgiri",
+    "contact": "040-27050300",
+    "type": "station",
+    "commissionerate": "Malkajgiri",
+    "case_volume": 850,
+    "hotspot_rank": 8
+  },
+  {
+    "id": 25,
+    "name": "Vanasthalipuram Police Station",
+    "lat": 17.3364,
+    "lng": 78.5558,
+    "address": "Vanasthalipuram Junction, Rangareddy",
+    "contact": "040-24050500",
+    "type": "station",
+    "commissionerate": "Malkajgiri"
+  },
+  {
+    "id": 26,
+    "name": "Nampally Police Station",
+    "lat": 17.3880,
+    "lng": 78.4690,
+    "address": "Nampally Station Road, Hyderabad",
+    "contact": "040-23267800",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 27,
+    "name": "Koti Police Station",
+    "lat": 17.3840,
+    "lng": 78.4880,
+    "address": "Sultan Bazaar Road, Koti, Hyderabad",
+    "contact": "040-24651200",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 28,
+    "name": "Bowenpally Police Station",
+    "lat": 17.4612,
+    "lng": 78.4799,
+    "address": "Bowenpally Market Area, Secunderabad",
+    "contact": "040-27761200",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 29,
+    "name": "Habsiguda Police Station",
+    "lat": 17.4142,
+    "lng": 78.5389,
+    "address": "Habsiguda Main Road, Hyderabad",
+    "contact": "040-27175600",
+    "type": "station",
+    "commissionerate": "Malkajgiri"
+  },
+  {
+    "id": 30,
+    "name": "Cyberabad Commissionerate HQ",
+    "lat": 17.4482,
+    "lng": 78.3914,
+    "address": "HUDA Complex, Madhapur, Hyderabad",
+    "contact": "040-23542200",
+    "type": "commissionerate",
+    "commissionerate": "Cyberabad"
+  },
+  {
+    "id": 31,
+    "name": "Malkajgiri Commissionerate HQ",
+    "lat": 17.4456,
+    "lng": 78.5667,
+    "address": "Malkajgiri, Hyderabad",
+    "contact": "040-27050200",
+    "type": "commissionerate",
+    "commissionerate": "Malkajgiri"
+  },
+  {
+    "id": 32,
+    "name": "Balanagar Police Station",
+    "lat": 17.4800,
+    "lng": 78.4420,
+    "address": "Balanagar Industrial Area, Hyderabad",
+    "contact": "040-23770100",
+    "type": "station",
+    "commissionerate": "Cyberabad"
+  },
+  {
+    "id": 33,
+    "name": "Goshamahal Police Station",
+    "lat": 17.3810,
+    "lng": 78.4640,
+    "address": "Goshamahal, Nampally, Hyderabad",
+    "contact": "040-24600100",
+    "type": "station",
+    "commissionerate": "Hyderabad"
+  },
+  {
+    "id": 34,
+    "name": "Saroornagar Police Station",
+    "lat": 17.3600,
+    "lng": 78.5300,
+    "address": "Saroornagar, Rangareddy",
+    "contact": "040-24060600",
+    "type": "station",
+    "commissionerate": "Malkajgiri"
+  },
+  {
+    "id": 35,
+    "name": "Neredmet Police Station",
+    "lat": 17.4700,
+    "lng": 78.5250,
+    "address": "AS Rao Nagar, Neredmet, Secunderabad",
+    "contact": "040-27101100",
+    "type": "station",
+    "commissionerate": "Malkajgiri"
+  }
+]
