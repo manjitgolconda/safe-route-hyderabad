@@ -8,6 +8,8 @@ SafeRoute suggests the **safest route** — not just the shortest — by analyzi
 ![AI](https://img.shields.io/badge/AI-client--side-6366f1)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
+### 🌐 [**Live Demo →** https://manjitgolconda.github.io/safe-route-hyderabad/](https://manjitgolconda.github.io/safe-route-hyderabad/)
+
 > **No paid APIs. No backend required. All AI runs in-browser. Fully static-site deployable.**
 
 ---
@@ -174,11 +176,16 @@ npx -y serve .
 
 ## ☁️ Deployment
 
-### GitHub Pages
+### GitHub Pages (Currently Live ✅)
 
-1. Push to a GitHub repo
+This project is deployed and live at:
+
+🔗 **https://manjitgolconda.github.io/safe-route-hyderabad/**
+
+To deploy your own:
+1. Fork this repo
 2. Go to **Settings → Pages → Source: main branch**
-3. Live at `https://<username>.github.io/safe-route-hyderabad/`
+3. Your site will be live at `https://<username>.github.io/safe-route-hyderabad/`
 
 ### Vercel
 
@@ -268,6 +275,12 @@ Drag and drop the project folder at [app.netlify.com/drop](https://app.netlify.c
 - [ ] Push notifications for alerts in saved areas
 - [ ] Offline mode with cached map tiles
 - [ ] TensorFlow.js integration for advanced crime prediction models
+
+---
+
+## 👨‍💻 Author
+
+**Manjit Golconda** — [@manjitgolconda](https://github.com/manjitgolconda)
 
 ---
 
