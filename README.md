@@ -122,7 +122,7 @@ riskScore = (crimeWeight × 0.40) + (timeWeight × 0.20) + (lightingWeight × 0.
 - **AI**: Client-side JavaScript (linear regression, statistical analysis, keyword intent matching)
 - **Icons**: [Lucide Icons](https://lucide.dev/) (SVG)
 - **Fonts**: Google Fonts (Inter + JetBrains Mono)
-- **Storage**: Browser `localStorage` for user reports and safety preferences
+- **Storage**: [GitHub](https://github.com/manjitgolconda/safe-route-hyderabad) for source code hosting & version control; Browser `localStorage` for user reports and safety preferences
 
 ---
 

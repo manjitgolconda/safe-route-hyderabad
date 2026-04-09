@@ -355,8 +355,12 @@ function showDropdown(dropdownId, results, onSelect) {
 
     dropdown.classList.add('active');
 
-    // Click handlers
+    // Click handlers — use mousedown + preventDefault to stop blur from
+    // hiding the dropdown before the click event fires on desktop.
     dropdown.querySelectorAll('.geocode-item').forEach(item => {
+        item.addEventListener('mousedown', (e) => {
+            e.preventDefault(); // Prevent input blur so click can fire
+        });
         item.addEventListener('click', () => {
             const idx = parseInt(item.dataset.index);
             onSelect(results[idx]);
